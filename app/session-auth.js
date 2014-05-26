@@ -1,20 +1,20 @@
 'use strict';
 
 exports.auth = function(s, next){
-	var sidkey = "PHPSESSID";
-	var cookies = s.request.headers.cookie;
-	var cookie = require('cookie');
-	var http = require('http');
-	var querystring = require('querystring');
-	var userMgr = require('./users-manager');
-	var roomMgr = require('./rooms-manager');
-	var options = {
+	var sidkey = "PHPSESSID",
+	cookies = s.request.headers.cookie,
+	cookie = require('cookie'),
+	http = require('http'),
+	querystring = require('querystring'),
+	userMgr = require('./users-manager'),
+	roomMgr = require('./rooms-manager'),
+	options = {
 		host:'localhost',
 		port: 8081,
 		path: '/api/auth.php',
 		method: 'POST'
-	};
-	var req = null;
+	},
+	req = null;
 	cookies = cookie.parse(cookies);
 	if(cookies[sidkey]){
 		var data = querystring.stringify({sid:cookies[sidkey]});
