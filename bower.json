@@ -1,0 +1,26 @@
+{
+	"name": "fancyflirt-chatapp",
+	"version": "0.0.0",
+	"authors": [
+		"AlexMarch"
+	],
+	"description": "Video chat",
+	"moduleType": [
+		"amd",
+		"globals"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"www/bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"backbone": "1.1.x",
+		"bootstrap": "~3.1.1",
+		"requirejs": "*"
+	}
+}

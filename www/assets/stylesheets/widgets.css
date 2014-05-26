@@ -1,0 +1,19 @@
+.controlpanel-ui ul.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 46px;
+  background: url("../images/dest/chat-seperator-top.png") bottom repeat-x;
+  overflow: hidden;
+}
+.controlpanel-ui ul.nav li {
+  float: left;
+}
+.controlpanel-ui .username {
+  font-size: 14.03px;
+  color: #a68485;
+  padding: 16px;
+  line-height: 42px;
+  margin-left: 10px;
+  cursor: pointer;
+}

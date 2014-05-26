@@ -1,0 +1,21 @@
+{
+	"name": "fancyflirt-chatapp",
+	"version": "0.0.0",
+	"description": "Video chat",
+	"main": "bin/server.js",
+	"bin": {
+		"fancyflirt-chatapp": "server.js"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node bin/server.js"
+	},
+	"author": "AlexMarch",
+	"license": "BSD-2-Clause",
+	"dependencies": {
+		"socket.io": "~1.0.0",
+		"debug": "~0.8.1",
+		"cookie": "*",
+		"querystring": "*"
+	}
+}

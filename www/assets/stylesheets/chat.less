@@ -1,0 +1,116 @@
+.chatcontent-ui {
+	width: @chatWidth;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
+	.radius(5px);
+	.texture-wrapper{
+		width: 100%;
+		height: 100%;
+		background-image: url("../images/dest/texture.png");
+		overflow: hidden;
+	}
+	.texture {
+		background-image: url("../images/dest/texture.png");
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+	.chatarea-ui {
+		background: url("../images/dest/chat-front-bg.png") repeat-x;
+		height: 397px;
+	}
+	#content{
+		float: left;
+	}
+	.chatarea-right-controls{
+		float: left;
+		width: 320px;
+		margin-left: 2px;
+		margin-top: 3px;
+	}
+	.settingsarea-ui{
+		background: url("../images/dest/chat-settings-front-bg.png") repeat-x;
+		height: 105px;
+		position: relative;
+		.settingsarea-wrapper-ui{
+			background: url("../images/dest/chat-settings-bg-image.png") left 2px no-repeat;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+	}
+}
+//Chat area
+.chatarea{
+	margin: 3px 0px 0px 3px;
+	.chatarea-content{
+		background: url("../images/dest/chatarea-bg.png") no-repeat;
+		position: relative;
+		width: 756px;
+		height: 353px;
+		.bg-image{
+			position: absolute;
+			left: 50%;
+			margin-left: -99px;
+			top: 50%;
+			margin-top: -76px;
+		}
+		.content{
+			width: 734px;
+			height: 239px;
+			overflow: auto;
+			padding: 10px;
+			color: #000;
+			text-shadow: 0px 1px 0px rgba(255,255,255,0.4);
+			font-size: 14px;
+			.msg{
+				font-style: italic;
+			}
+			.nickname{
+				color: #af0000;
+			}
+			h1{
+				padding: 0px;
+				margin: 0px;
+			}
+			p{
+				padding: 0px;
+				margin: 0px;
+				line-height: 23px;
+			}
+		}
+	}
+	.chatarea-input{
+		.radius(5px);
+		box-shadow: inset 2px 2px 8px rgba(0,0,0,0.5);
+		width: 756px;
+		height: 35px;
+		margin-top: 2px;
+		input[type="text"]{
+			margin: 0;
+			padding: 0;
+			width: 745px;
+			height: 34px;
+			padding-left: 10px;
+			outline: none;
+			background: none;
+			border: 1px solid rgba(0,0,0,0.3);
+			color: #fff;
+			.radius(5px);
+			box-shadow: inset 0px -3px 6px rgba(255,255,255,0.09);
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 13px;
+		}
+	}
+}
+.topic{
+	font-size: 14px;
+	span{
+		color: #676666;
+	}
+}

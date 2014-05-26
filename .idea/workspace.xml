@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="06ec296c-c6ef-4864-8d9c-d16fc2fec006" name="Default" comment="" />
+    <ignored path="fancyflirt-chatapp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="fancyflirt-chatapp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="rooms-manager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/rooms-manager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="44" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="1155">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/assets/stylesheets/chat.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="113" column="19" selection-start="2178" selection-end="2178" vertical-scroll-proportion="-16.416666" vertical-offset="1301" max-vertical-offset="1830">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="widgets.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/assets/stylesheets/widgets.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="23" selection-start="1199" selection-end="1199" vertical-scroll-proportion="87.958336" vertical-offset="3071" max-vertical-offset="3495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="26" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1035">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userslistwidget.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/javascripts/widgets/userslistwidget.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+              <folding>
+                <marker date="1401114947000" expanded="true" signature="187:284" placeholder="..." />
+                <marker date="1401114947000" expanded="true" signature="187:263" placeholder="..." />
+                <marker date="1401114947000" expanded="true" signature="187:261" placeholder="..." />
+                <marker date="1401114947000" expanded="true" signature="237:278" placeholder="..." />
+                <marker date="1401114947000" expanded="true" signature="237:263" placeholder="..." />
+                <marker date="1401114947000" expanded="true" signature="237:261" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".bowerrc" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.bowerrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="20" selection-start="376" selection-end="376" vertical-scroll-proportion="-14.291667" vertical-offset="2" max-vertical-offset="480">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="3" selection-start="17" selection-end="17" vertical-scroll-proportion="0.03348214" vertical-offset="0" max-vertical-offset="448">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publish-manager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/publish-manager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/javascripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="26" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0" vertical-offset="451" max-vertical-offset="1140">
+              <folding>
+                <marker date="1401114597000" expanded="true" signature="445:458" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controlpanelwidget.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/javascripts/widgets/controlpanelwidget.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="28" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1185">
+              <folding>
+                <marker date="1401114544000" expanded="true" signature="121:873" placeholder="..." />
+                <marker date="1401114544000" expanded="true" signature="169:381" placeholder="..." />
+                <marker date="1401114544000" expanded="true" signature="199:376" placeholder="..." />
+                <marker date="1401114544000" expanded="true" signature="226:370" placeholder="..." />
+                <marker date="1401114544000" expanded="true" signature="896:1353" placeholder="..." />
+                <marker date="1401114544000" expanded="true" signature="1056:1343" placeholder="..." />
+                <marker date="1401114544000" expanded="true" signature="1085:1338" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publisherwidget.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/javascripts/widgets/publisherwidget.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="94" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="1680">
+              <folding>
+                <marker date="1401113068000" expanded="true" signature="206:1582" placeholder="..." />
+                <marker date="1401113068000" expanded="true" signature="826:1549" placeholder="..." />
+                <marker date="1401113068000" expanded="true" signature="1385:1515" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chatcontent.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/javascripts/views/chatcontent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="35" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="810">
+              <folding>
+                <marker date="1400969878000" expanded="true" signature="307:559" placeholder="..." />
+                <marker date="1400969878000" expanded="true" signature="339:550" placeholder="..." />
+                <marker date="1400969878000" expanded="true" signature="408:541" placeholder="..." />
+                <marker date="1400969878000" expanded="false" signature="601:614" placeholder="..." />
+                <marker date="1400969878000" expanded="true" signature="615:772" placeholder="..." />
+                <marker date="1400969878000" expanded="true" signature="650:761" placeholder="..." />
+                <marker date="1400969878000" expanded="true" signature="694:749" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users-manager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/users-manager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="5" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/.bowerrc" />
+        <option value="$PROJECT_DIR$/www/assets/stylesheets/sprites.less" />
+        <option value="$PROJECT_DIR$/www/inc/config.php" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/www/assets/stylesheets/mixins.less" />
+        <option value="$PROJECT_DIR$/www/assets/stylesheets/variables.less" />
+        <option value="$PROJECT_DIR$/www/assets/stylesheets/main.less" />
+        <option value="$PROJECT_DIR$/www/javascripts/libs/tinyscrollbar/jquery.tinyscrollbar.js" />
+        <option value="$PROJECT_DIR$/www/javascripts/libs/tinyscrollbar/tinyscrollbar.css" />
+        <option value="$PROJECT_DIR$/www/javascripts/libs/tinyscrollbar/index.html" />
+        <option value="$PROJECT_DIR$/www/assets/stylesheets/tinyscrollbar.less" />
+        <option value="$PROJECT_DIR$/www/index.php" />
+        <option value="$PROJECT_DIR$/www/assets/stylesheets/jscrollpane.less" />
+        <option value="$PROJECT_DIR$/www/crossdomain.xml" />
+        <option value="$PROJECT_DIR$/www/api/auth.php" />
+        <option value="$PROJECT_DIR$/bin/server.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/www/inc/session-auth.php" />
+        <option value="$PROJECT_DIR$/www/inc/booting.php" />
+        <option value="$PROJECT_DIR$/www/javascripts/main.js" />
+        <option value="$PROJECT_DIR$/app/messages.js" />
+        <option value="$PROJECT_DIR$/www/javascripts/widgets/chatsettingswidget.js" />
+        <option value="$PROJECT_DIR$/www/javascripts/views/chatcontent.js" />
+        <option value="$PROJECT_DIR$/app/session-auth.js" />
+        <option value="$PROJECT_DIR$/app/users-manager.js" />
+        <option value="$PROJECT_DIR$/configs/nginx.conf" />
+        <option value="$PROJECT_DIR$/app/rooms-manager.js" />
+        <option value="$PROJECT_DIR$/www/javascripts/views/chatarea.js" />
+        <option value="$PROJECT_DIR$/www/assets/stylesheets/widgets.less" />
+        <option value="$PROJECT_DIR$/app/publish-manager.js" />
+        <option value="$PROJECT_DIR$/www/javascripts/widgets/publisherwidget.js" />
+        <option value="$PROJECT_DIR$/www/javascripts/widgets/controlpanelwidget.js" />
+        <option value="$PROJECT_DIR$/www/javascripts/app.js" />
+        <option value="$PROJECT_DIR$/www/assets/stylesheets/chat.less" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/www/javascripts/widgets/userslistwidget.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="34" />
+    <option name="y" value="22" />
+    <option name="width" value="1400" />
+    <option name="height" value="829" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fancyflirt-chatapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fancyflirt-chatapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fancyflirt-chatapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../game/game-skeleton" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/assets/stylesheets" />
+      <recent name="$PROJECT_DIR$/www/javascripts/libs/jscrollpen" />
+      <recent name="$PROJECT_DIR$/www/javascripts/libs/tinyscrollbar" />
+      <recent name="$PROJECT_DIR$/www/assets/images/dest" />
+      <recent name="$PROJECT_DIR$/www/assets/images/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/javascripts/views" />
+      <recent name="$PROJECT_DIR$/www/javascripts/libs/jscrollpen" />
+      <recent name="$PROJECT_DIR$/www/assets/images/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.run">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="false" name="run" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="bin/server.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="PORT" value="3456" />
+      </envs>
+      <browser start="false" name="Chrome" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.run" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06ec296c-c6ef-4864-8d9c-d16fc2fec006" name="Default" comment="" />
+      <created>1400430960625</created>
+      <updated>1400430960625</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="34" y="22" width="1400" height="829" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21281296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32833788" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21281296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/assets/stylesheets/mixins.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="25" selection-start="90" selection-end="90" vertical-scroll-proportion="0.106132075" vertical-offset="0" max-vertical-offset="424">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/images/src/chat-front-bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/images/dest/fancyflirt-sprites.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/images/dest/chat-settings-front-bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/images/dest/chatarea-bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/images/dest/gray-button-bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/images/dest/c-button-bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/images/dest/file-icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/stylesheets/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/stylesheets/sprites.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="21" selection-start="686" selection-end="686" vertical-scroll-proportion="1.0563064" vertical-offset="56" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/libs/tinyscrollbar/jquery.tinyscrollbar.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/libs/tinyscrollbar/jquery.tinyscrollbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="14" selection-start="2622" selection-end="2622" vertical-scroll-proportion="0.0" vertical-offset="447" max-vertical-offset="3255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/libs/jscrollpane/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/stylesheets/tinyscrollbar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="20" selection-start="861" selection-end="861" vertical-scroll-proportion="1.3348215" vertical-offset="2" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/libs/jscrollpane/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="12" selection-start="3125" selection-end="7382" vertical-scroll-proportion="0.7810219" vertical-offset="1494" max-vertical-offset="3150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/libs/jscrollpane/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-6.263393" vertical-offset="2806" max-vertical-offset="3495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/images/dest/vertical-drag.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/libs/tinyscrollbar/tinyscrollbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="24" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/libs/tinyscrollbar/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="40" selection-start="858" selection-end="871" vertical-scroll-proportion="9.708333" vertical-offset="533" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/libs/jscrollpane/jquery.jscrollpane.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="15" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="1800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/stylesheets/jscrollpane.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="74" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/libs/jscrollpane/jquery.jscrollpane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="34" selection-start="8761" selection-end="8785" vertical-scroll-proportion="5.0069766" vertical-offset="1162" max-vertical-offset="22005">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/src/Publisher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="15" selection-start="533" selection-end="2006" vertical-scroll-proportion="-14.541667" vertical-offset="326" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/crossdomain.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="22" selection-start="262" selection-end="262" vertical-scroll-proportion="0.16741072" vertical-offset="0" max-vertical-offset="448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/api/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="39" selection-start="45" selection-end="45" vertical-scroll-proportion="0.033783782" vertical-offset="0" max-vertical-offset="444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="21" selection-start="420" selection-end="420" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/inc/session-auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="27" selection-start="32" selection-end="32" vertical-scroll-proportion="0.033783782" vertical-offset="0" max-vertical-offset="444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="261" selection-end="261" vertical-scroll-proportion="0.33783785" vertical-offset="0" max-vertical-offset="444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/inc/booting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="28" selection-start="130" selection-end="130" vertical-scroll-proportion="0.16891892" vertical-offset="0" max-vertical-offset="444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="38" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <folding>
+            <marker date="1400965834000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1400965834000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/stylesheets/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="16" selection-start="90" selection-end="90" vertical-scroll-proportion="0.14150943" vertical-offset="0" max-vertical-offset="424">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="24" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/widgets/chatsettingswidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="34" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="795">
+          <folding>
+            <marker date="1400969573000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/session-auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="33" selection-start="149" selection-end="149" vertical-scroll-proportion="-0.0021367522" vertical-offset="76" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="0" selection-start="5532" selection-end="5532" vertical-scroll-proportion="0.0" vertical-offset="2607" max-vertical-offset="3345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/users-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="5" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/views/chatcontent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="35" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="810">
+          <folding>
+            <marker date="1400969878000" expanded="true" signature="307:559" placeholder="..." />
+            <marker date="1400969878000" expanded="true" signature="339:550" placeholder="..." />
+            <marker date="1400969878000" expanded="true" signature="408:541" placeholder="..." />
+            <marker date="1400969878000" expanded="false" signature="601:614" placeholder="..." />
+            <marker date="1400969878000" expanded="true" signature="615:772" placeholder="..." />
+            <marker date="1400969878000" expanded="true" signature="650:761" placeholder="..." />
+            <marker date="1400969878000" expanded="true" signature="694:749" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/views/chatarea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="35" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="825">
+          <folding>
+            <marker date="1401106674000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/widgets/publisherwidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="94" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="1680">
+          <folding>
+            <marker date="1401113068000" expanded="true" signature="206:1582" placeholder="..." />
+            <marker date="1401113068000" expanded="true" signature="826:1549" placeholder="..." />
+            <marker date="1401113068000" expanded="true" signature="1385:1515" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/publish-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/rooms-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="44" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="707" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/widgets/controlpanelwidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="28" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1185">
+          <folding>
+            <marker date="1401114544000" expanded="true" signature="121:873" placeholder="..." />
+            <marker date="1401114544000" expanded="true" signature="169:381" placeholder="..." />
+            <marker date="1401114544000" expanded="true" signature="199:376" placeholder="..." />
+            <marker date="1401114544000" expanded="true" signature="226:370" placeholder="..." />
+            <marker date="1401114544000" expanded="true" signature="896:1353" placeholder="..." />
+            <marker date="1401114544000" expanded="true" signature="1056:1343" placeholder="..." />
+            <marker date="1401114544000" expanded="true" signature="1085:1338" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="26" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0" vertical-offset="451" max-vertical-offset="1140">
+          <folding>
+            <marker date="1401114597000" expanded="true" signature="445:458" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/stylesheets/widgets.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="23" selection-start="1199" selection-end="1199" vertical-scroll-proportion="87.958336" vertical-offset="3071" max-vertical-offset="3495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/stylesheets/chat.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="19" selection-start="2178" selection-end="2178" vertical-scroll-proportion="-16.416666" vertical-offset="1301" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="26" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/javascripts/widgets/userslistwidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+          <folding>
+            <marker date="1401114947000" expanded="true" signature="187:284" placeholder="..." />
+            <marker date="1401114947000" expanded="true" signature="187:263" placeholder="..." />
+            <marker date="1401114947000" expanded="true" signature="187:261" placeholder="..." />
+            <marker date="1401114947000" expanded="true" signature="237:278" placeholder="..." />
+            <marker date="1401114947000" expanded="true" signature="237:263" placeholder="..." />
+            <marker date="1401114947000" expanded="true" signature="237:261" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="20" selection-start="376" selection-end="376" vertical-scroll-proportion="-14.291667" vertical-offset="2" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="3" selection-start="17" selection-end="17" vertical-scroll-proportion="0.03348214" vertical-offset="0" max-vertical-offset="448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

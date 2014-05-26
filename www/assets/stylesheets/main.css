@@ -1,0 +1,479 @@
+.sprite {
+  background-image: url(../images/dest/fancyflirt-sprites.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+.sprite.sprite-chats_03 {
+  background-position: -1px -1px;
+  width: 31px;
+  height: 31px;
+}
+.sprite.sprite-chats_06 {
+  background-position: -34px -1px;
+  width: 31px;
+  height: 30px;
+}
+.sprite.sprite-chats_08 {
+  background-position: -67px -1px;
+  width: 54px;
+  height: 27px;
+}
+.sprite.sprite-chats_11 {
+  background-position: -123px -1px;
+  width: 28px;
+  height: 26px;
+}
+.sprite.sprite-chats_14 {
+  background-position: -153px -1px;
+  width: 29px;
+  height: 29px;
+}
+.sprite.sprite-chats_16 {
+  background-position: -67px -32px;
+  width: 26px;
+  height: 26px;
+}
+.sprite.sprite-chats_25 {
+  background-position: -95px -32px;
+  width: 22px;
+  height: 17px;
+}
+.sprite.sprite-chats_29 {
+  background-position: -184px -1px;
+  width: 199px;
+  height: 152px;
+}
+.sprite.sprite-chats_33 {
+  background-position: -1px -155px;
+  width: 25px;
+  height: 26px;
+}
+.sprite.sprite-chats_36 {
+  background-position: -28px -155px;
+  width: 25px;
+  height: 25px;
+}
+.chatcontent-ui {
+  width: 1084px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.chatcontent-ui .texture-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/dest/texture.png");
+  overflow: hidden;
+}
+.chatcontent-ui .texture {
+  background-image: url("../images/dest/texture.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.chatcontent-ui .chatarea-ui {
+  background: url("../images/dest/chat-front-bg.png") repeat-x;
+  height: 397px;
+}
+.chatcontent-ui #content {
+  float: left;
+}
+.chatcontent-ui .chatarea-right-controls {
+  float: left;
+  width: 320px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+.chatcontent-ui .settingsarea-ui {
+  background: url("../images/dest/chat-settings-front-bg.png") repeat-x;
+  height: 105px;
+  position: relative;
+}
+.chatcontent-ui .settingsarea-ui .settingsarea-wrapper-ui {
+  background: url("../images/dest/chat-settings-bg-image.png") left 2px no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.chatarea {
+  margin: 3px 0px 0px 3px;
+}
+.chatarea .chatarea-content {
+  background: url("../images/dest/chatarea-bg.png") no-repeat;
+  position: relative;
+  width: 756px;
+  height: 353px;
+}
+.chatarea .chatarea-content .bg-image {
+  position: absolute;
+  left: 50%;
+  margin-left: -99px;
+  top: 50%;
+  margin-top: -76px;
+}
+.chatarea .chatarea-content .content {
+  width: 734px;
+  height: 239px;
+  overflow: auto;
+  padding: 10px;
+  color: #000;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+}
+.chatarea .chatarea-content .content .msg {
+  font-style: italic;
+}
+.chatarea .chatarea-content .content .nickname {
+  color: #af0000;
+}
+.chatarea .chatarea-content .content h1 {
+  padding: 0px;
+  margin: 0px;
+}
+.chatarea .chatarea-content .content p {
+  padding: 0px;
+  margin: 0px;
+  line-height: 23px;
+}
+.chatarea .chatarea-input {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.5);
+  width: 756px;
+  height: 35px;
+  margin-top: 2px;
+}
+.chatarea .chatarea-input input[type="text"] {
+  margin: 0;
+  padding: 0;
+  width: 745px;
+  height: 34px;
+  padding-left: 10px;
+  outline: none;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  box-shadow: inset 0px -3px 6px rgba(255, 255, 255, 0.09);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.topic {
+  font-size: 14px;
+}
+.topic span {
+  color: #676666;
+}
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+.jspPane {
+  position: absolute;
+}
+.jspVerticalBar {
+  background: url("../images/dest/vertival-divider-bg.png") repeat-y right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+}
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background: red;
+}
+.jspCap {
+  display: none;
+}
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+.jspTrack {
+  background: url("../images/dest/vertical-track.png") no-repeat 6px;
+  position: relative;
+}
+.jspDrag {
+  background: url("../images/dest/vertical-drag.png") no-repeat -2px;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+.jspVerticalBar .jspArrow {
+  height: 16px;
+}
+.jspHorizontalBar .jspArrow {
+  width: 16px;
+  float: left;
+  height: 100%;
+}
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+.controlpanel-ui ul.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 46px;
+  background: url("../images/dest/chat-seperator-top.png") bottom repeat-x;
+  overflow: hidden;
+}
+.controlpanel-ui ul.nav li {
+  float: left;
+}
+.controlpanel-ui ul.nav .sprite {
+  margin-left: 15px;
+  margin-top: 8px;
+  opacity: 0.8;
+}
+.controlpanel-ui ul.nav .sprite:hover {
+  opacity: 1;
+}
+.controlpanel-ui ul.nav-bottom {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 46px;
+  background: url("../images/dest/chat-seperator-bottom.png") top repeat-x;
+  overflow: hidden;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.controlpanel-ui ul.nav-bottom .sprite {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.controlpanel-ui ul.nav-bottom li {
+  float: left;
+}
+.controlpanel-ui .button-controls {
+  margin-left: 82px;
+  margin-top: 11px;
+}
+.controlpanel-ui .button-controls .c-button {
+  background: url('../images/dest/c-button-bg.png') no-repeat;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  text-decoration: none;
+  height: 19px;
+  width: 118px;
+  font-weight: normal;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+  letter-spacing: 0px;
+  line-height: 16px;
+}
+.controlpanel-ui .username {
+  font-size: 14.03px;
+  color: #a68485;
+  padding: 6px;
+  line-height: 42px;
+  padding-right: 0px;
+  cursor: pointer;
+}
+.controlpanel-ui .topic {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+  width: 335px;
+  height: 24px;
+  margin-top: 8px;
+  margin-left: 10px;
+  position: relative;
+}
+.controlpanel-ui .topic .inner-wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+}
+.controlpanel-ui .topic input[type="text"] {
+  border: none;
+  outline: none;
+  background: none;
+  width: 262px;
+  padding: 1px 7px;
+  font-size: 14px;
+  color: #5e5e5e;
+}
+.controlpanel-ui .topic .settopic-button {
+  background: url("../images/dest/settopic-button-bg.png") repeat-x;
+  height: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 53px;
+  text-align: center;
+  line-height: 24px;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.chatsettings-navbar-ui .icon-file {
+  background: url('../images/dest/file-icon.png') no-repeat;
+  width: 18px;
+  height: 23px;
+  display: inline-block;
+  margin-right: 4px;
+  margin-top: 4px;
+  position: absolute;
+  left: 0px;
+}
+.chatsettings-navbar-ui .checkbox {
+  background: url("../images/dest/checkbox-normal.png") no-repeat;
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  margin-right: 4px;
+  margin-top: 6px;
+  position: absolute;
+  left: 0px;
+}
+.chatsettings-navbar-ui .checkbox.checked {
+  background: url("../images/dest/checkbox-checked.png") no-repeat !important;
+}
+.chatsettings-navbar-ui ul.navbar-settings {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 155px;
+  margin-top: 31px;
+}
+.chatsettings-navbar-ui ul.navbar-settings li {
+  float: left;
+}
+.chatsettings-navbar-ui ul.navbar-settings li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.7em;
+  margin-left: 15px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.chatsettings-navbar-ui ul.navbar-settings li a.icon {
+  padding-left: 28px;
+  display: inline-block;
+  position: relative;
+  line-height: 32px;
+}
+.video-ui-widget {
+  background: #000;
+  width: 320px;
+  height: 175px;
+}
+.userslist-widget {
+  height: 215px;
+  margin-top: 2px;
+  overflow: hidden;
+  float: left;
+  width: 164px;
+}
+.userslist-widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.userslist-widget ul a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+.userslist-widget ul a:hover {
+  color: #ffad10;
+}
+.userslist-widget ul.viewport {
+  width: 200px;
+}
+.userslist-widget ul li {
+  padding: 2px;
+}
+#userslist-scrollbar {
+  width: 160px;
+  height: 200px;
+  overflow: hidden;
+}
+.userlistwidget {
+  width: 160px;
+  overflow: hidden;
+  float: left;
+}
+.userpreviewwidget {
+  width: 156px;
+  height: 215px;
+  float: left;
+  margin-top: 2px;
+  background: url("../images/dest/1x1-bg.png") repeat;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}

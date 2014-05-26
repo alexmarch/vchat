@@ -1,0 +1,51 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+	background-position: @x @y;
+	width: @width;
+	height: @height;
+}
+
+.sprite {
+	background-image: url(../images/dest/fancyflirt-sprites.png);
+	background-repeat: no-repeat;
+	display: block;
+
+	&.sprite-chats_03 {
+		.stitches-sprite(-1px, -1px, 31px, 31px);
+	}
+
+	&.sprite-chats_06 {
+		.stitches-sprite(-34px, -1px, 31px, 30px);
+	}
+
+	&.sprite-chats_08 {
+		.stitches-sprite(-67px, -1px, 54px, 27px);
+	}
+
+	&.sprite-chats_11 {
+		.stitches-sprite(-123px, -1px, 28px, 26px);
+	}
+
+	&.sprite-chats_14 {
+		.stitches-sprite(-153px, -1px, 29px, 29px);
+	}
+
+	&.sprite-chats_16 {
+		.stitches-sprite(-67px, -32px, 26px, 26px);
+	}
+
+	&.sprite-chats_25 {
+		.stitches-sprite(-95px, -32px, 22px, 17px);
+	}
+
+	&.sprite-chats_29 {
+		.stitches-sprite(-184px, -1px, 199px, 152px);
+	}
+
+	&.sprite-chats_33 {
+		.stitches-sprite(-1px, -155px, 25px, 26px);
+	}
+
+	&.sprite-chats_36 {
+		.stitches-sprite(-28px, -155px, 25px, 25px);
+	}
+}

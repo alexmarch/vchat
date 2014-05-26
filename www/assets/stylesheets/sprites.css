@@ -1,0 +1,55 @@
+.sprite {
+  background-image: url(../images/dest/fancyflirt-sprites.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+.sprite.sprite-chats_03 {
+  background-position: -1px -1px;
+  width: 31px;
+  height: 31px;
+}
+.sprite.sprite-chats_06 {
+  background-position: -34px -1px;
+  width: 31px;
+  height: 30px;
+}
+.sprite.sprite-chats_08 {
+  background-position: -67px -1px;
+  width: 54px;
+  height: 27px;
+}
+.sprite.sprite-chats_11 {
+  background-position: -123px -1px;
+  width: 28px;
+  height: 26px;
+}
+.sprite.sprite-chats_14 {
+  background-position: -153px -1px;
+  width: 29px;
+  height: 29px;
+}
+.sprite.sprite-chats_16 {
+  background-position: -67px -32px;
+  width: 26px;
+  height: 26px;
+}
+.sprite.sprite-chats_25 {
+  background-position: -95px -32px;
+  width: 22px;
+  height: 17px;
+}
+.sprite.sprite-chats_29 {
+  background-position: -184px -1px;
+  width: 199px;
+  height: 152px;
+}
+.sprite.sprite-chats_33 {
+  background-position: -1px -155px;
+  width: 25px;
+  height: 26px;
+}
+.sprite.sprite-chats_36 {
+  background-position: -28px -155px;
+  width: 25px;
+  height: 25px;
+}
