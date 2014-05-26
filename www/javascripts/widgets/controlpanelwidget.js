@@ -30,7 +30,8 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		events:{
 			'click #toolsPanel':'switchTools',
 			'click #memberAreaButton':'memberAreaClick',
-			'click #setTopicButton': 'setTopicButtonClick'
+			'click #setTopicButton': 'setTopicButtonClick',
+			'keypress #inputTopic': 'keyPressTopicHandler'
 		},
 		initialize: function(){
 			this.$el.addClass(this.className);
@@ -51,6 +52,11 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			var title = this.$inputTopic.val();
 			if($.trim(title)!=''){
 				App.settopic(this.$inputTopic.val());
+			}
+		},
+		keyPressTopicHandler: function(e){
+			if(e.keyCode == 13){
+				this.setTopicButtonClick();
 			}
 		}
 	});
