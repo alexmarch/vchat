@@ -1,6 +1,6 @@
 'use strict';
 
-define(['jquery', 'underscore', 'backbone', 'views/chatcontent'], function ($, _, Backbone, ChatContent) {
+define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function ($, _, Backbone, ChatContent) {
 
 	window.App = window.App || {};
 	window.App = {

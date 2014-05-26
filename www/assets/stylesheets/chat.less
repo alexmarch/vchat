@@ -5,6 +5,9 @@
 	overflow: hidden;
 	box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
 	.radius(5px);
+	&.mchat{
+		.radius(0px);
+	}
 	.texture-wrapper{
 		width: 100%;
 		height: 100%;
@@ -32,6 +35,13 @@
 		width: 320px;
 		margin-left: 2px;
 		margin-top: 3px;
+		&.mchat{
+			width: @mchatVideoContentWidth;
+			margin-left: 0px;
+			margin-top: 0px;
+			background: #000;
+			height: 353px;
+		}
 	}
 	.settingsarea-ui{
 		background: url("../images/dest/chat-settings-front-bg.png") repeat-x;
@@ -48,11 +58,18 @@
 //Chat area
 .chatarea{
 	margin: 3px 0px 0px 3px;
+	&.mchat{
+		margin: 0px;
+		margin-left: 2px;
+	}
 	.chatarea-content{
 		background: url("../images/dest/chatarea-bg.png") no-repeat;
 		position: relative;
 		width: 756px;
 		height: 353px;
+		&.mchat{
+			width: @mchatContentWidth;
+		}
 		.bg-image{
 			position: absolute;
 			left: 50%;
@@ -70,6 +87,9 @@
 			font-size: 14px;
 			.msg{
 				font-style: italic;
+			}
+			&.mchat{
+				width: @mchatContentWidth;
 			}
 			.nickname{
 				color: #af0000;
@@ -91,11 +111,17 @@
 		width: 756px;
 		height: 35px;
 		margin-top: 2px;
+		&.mchat{
+			width: @mchatContentWidth;
+		}
 		input[type="text"]{
 			margin: 0;
 			padding: 0;
 			width: 745px;
 			height: 34px;
+			&.mchat{
+				width: @mchatContentWidth - 11;
+			}
 			padding-left: 10px;
 			outline: none;
 			background: none;

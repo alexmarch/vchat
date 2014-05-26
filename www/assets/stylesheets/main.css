@@ -63,6 +63,11 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
+.chatcontent-ui.mchat {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
 .chatcontent-ui .texture-wrapper {
   width: 100%;
   height: 100%;
@@ -91,6 +96,13 @@
   margin-left: 2px;
   margin-top: 3px;
 }
+.chatcontent-ui .chatarea-right-controls.mchat {
+  width: 650px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background: #000;
+  height: 353px;
+}
 .chatcontent-ui .settingsarea-ui {
   background: url("../images/dest/chat-settings-front-bg.png") repeat-x;
   height: 105px;
@@ -105,11 +117,18 @@
 .chatarea {
   margin: 3px 0px 0px 3px;
 }
+.chatarea.mchat {
+  margin: 0px;
+  margin-left: 2px;
+}
 .chatarea .chatarea-content {
   background: url("../images/dest/chatarea-bg.png") no-repeat;
   position: relative;
   width: 756px;
   height: 353px;
+}
+.chatarea .chatarea-content.mchat {
+  width: 432px;
 }
 .chatarea .chatarea-content .bg-image {
   position: absolute;
@@ -129,6 +148,9 @@
 }
 .chatarea .chatarea-content .content .msg {
   font-style: italic;
+}
+.chatarea .chatarea-content .content.mchat {
+  width: 432px;
 }
 .chatarea .chatarea-content .content .nickname {
   color: #af0000;
@@ -151,6 +173,9 @@
   height: 35px;
   margin-top: 2px;
 }
+.chatarea .chatarea-input.mchat {
+  width: 432px;
+}
 .chatarea .chatarea-input input[type="text"] {
   margin: 0;
   padding: 0;
@@ -167,6 +192,9 @@
   box-shadow: inset 0px -3px 6px rgba(255, 255, 255, 0.09);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
+}
+.chatarea .chatarea-input input[type="text"].mchat {
+  width: 421px;
 }
 .topic {
   font-size: 14px;
@@ -320,6 +348,10 @@
   line-height: 42px;
   padding-right: 0px;
   cursor: pointer;
+}
+.controlpanel-ui .username.mchat {
+  font-size: 18px;
+  font-weight: bold;
 }
 .controlpanel-ui .topic {
   border-radius: 5px;

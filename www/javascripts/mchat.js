@@ -8,7 +8,7 @@ requirejs.config({
 	},
 	shim: {
 		"backbone": {
-			deps: ["underscore","jquery"],
+			deps: ["underscore", "jquery"],
 			exports: "Backbone"
 		},
 		"underscore": {
@@ -23,5 +23,5 @@ requirejs.config({
 	}
 });
 define(['mchat-app'], function (App) {
-//	$('#chatapp').html(App.views.ChatContent.render().$el);
+	$('#chatapp').html(App.views.ChatContent.render().$el);
 });
