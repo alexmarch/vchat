@@ -17,6 +17,7 @@
 		"socket.io": "~1.0.0",
 		"debug": "~0.8.1",
 		"cookie": "*",
-		"querystring": "*"
+		"querystring": "*",
+		"underscore.string": "*"
 	}
 }

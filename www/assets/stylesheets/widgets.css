@@ -143,6 +143,9 @@
   letter-spacing: 0px;
   line-height: 16px;
 }
+.controlpanel-ui .user {
+  color: #000 !important;
+}
 .controlpanel-ui .username {
   font-size: 14.03px;
   color: #a68485;

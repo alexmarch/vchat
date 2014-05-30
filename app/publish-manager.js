@@ -10,7 +10,10 @@ module.exports = {
 		return crypto.randomBytes(32).toString('base64');
 	},
 	publish: function (o, data) {
+
 		userMgr.set(o.socket, 'type', data.type);
+		userMgr.set(o.socket, 'sname', data.name);
+
 		var room = roomMgr.getRoom(o);
 		o.socket.emit('publish', {name: data.name, type: data.type});
 		if (data.type === "free") {

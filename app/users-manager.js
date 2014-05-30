@@ -63,7 +63,12 @@ module.exports = {
 		}
 	},
 	isPerformer: function(data){
-		return data['utype'] === 1 ? true : false;
+		if(data && data['utype']) {
+			return data['utype'] === 1 ? true : false;
+		}
+		else {
+			return false;
+		}
 	},
 	isMember: function(data){
 		return data['utype'] === 2 ? true : false;

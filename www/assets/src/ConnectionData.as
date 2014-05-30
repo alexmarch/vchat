@@ -1,0 +1,1 @@
+﻿package  {		public class ConnectionData extends Object {		public static type:String;		public static nickname:String;		public static host:String;		public static sname:String;				public function ConnectionData() {			// constructor code		}	}	}

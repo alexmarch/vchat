@@ -1,5 +1,5 @@
 'use strict';
-
+var debug = require('debug')('fancyflirt');
 exports.auth = function(s, next){
 	var sidkey = "PHPSESSID",
 	cookies = s.request.headers.cookie,
@@ -27,18 +27,25 @@ exports.auth = function(s, next){
 			res.on('data',function(chunk){
 				try{
 					var data = JSON.parse(chunk);
-					if(data && data['auth'] === true && data['utype']){
-						console.log(roomMgr.inRoom(data));
+					debug("Authentication -->");
+					if(data['utype'] !== undefined){
 						if(userMgr.isPerformer(data) && roomMgr.inRoom(data) === false){
+							debug("Performer authentication");
+							userMgr.add(s,data);
+							return next();
+						}else if(userMgr.isMember(data) || userMgr.isGuest(data)){
+							debug("Client authentication");
 							userMgr.add(s,data);
 							return next();
 						}else{
+							debug("Auth error!");
 							return next(new Error('Authintification error'));
 						}
 					}else{
 						return next(new Error('Authintification error'));
 					}
 				}catch(e){
+					debug(e.message);
 				}
 			})
 		});

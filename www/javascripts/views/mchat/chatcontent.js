@@ -2,7 +2,7 @@
 
 define(['jquery', 'underscore', 'backbone', 'views/mchat/chatarea',
  'widgets/mchat/playerwidget'],
-	function ($, _, Backbone, ChatArea, PlayerWidget) {
+	function ($, _, Backbone, ChatArea, VPlayerWidget) {
 	var _template = '<div class="chatarea-ui mchat">\
 	<div class="texture-wrapper mchat">\
 		<div class="chatarea-right-controls mchat">\
@@ -39,8 +39,8 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatarea',
 			App.widgets.ChatArea.focus();
 
 			//Render video publisher
-//			window.publisher = new PublisherWidget();
-//			this.$('.video-ui-widget').html(publisher.view().$el);
+			window.vplayer = new VPlayerWidget();
+			this.$('.video-ui-widget').html(vplayer.elem());
 			return this;
 		}
 	});

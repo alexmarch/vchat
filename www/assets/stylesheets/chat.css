@@ -102,6 +102,9 @@
 .chatarea .chatarea-content .content.mchat {
   width: 432px;
 }
+.chatarea .chatarea-content .content .user {
+  color: #626262 !important;
+}
 .chatarea .chatarea-content .content .nickname {
   color: #af0000;
 }

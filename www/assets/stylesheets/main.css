@@ -157,6 +157,9 @@
 .chatarea .chatarea-content .content.mchat {
   width: 432px;
 }
+.chatarea .chatarea-content .content .user {
+  color: #626262 !important;
+}
 .chatarea .chatarea-content .content .nickname {
   color: #af0000;
 }
@@ -354,6 +357,9 @@
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
   letter-spacing: 0px;
   line-height: 16px;
+}
+.controlpanel-ui .user {
+  color: #000 !important;
 }
 .controlpanel-ui .username {
   font-size: 14.03px;

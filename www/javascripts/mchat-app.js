@@ -18,7 +18,22 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function
 			App.widgets.ctrlPanelWidget.setUserName(data.username);
 			publisher.connect(data.host);
 		});
-
+		App.sio.on('set_room',function(){
+			if(roomid){
+				App.sio.emit('join_room',{id: roomid});
+			};
+		});
+		App.sio.on('join_room_error', function(){
+			console.log("join room error");
+			//@todo redirect to all models page
+		});
+		App.sio.on('join_successful',function(data){
+			vplayer.connect(data);
+			App.widgets.ctrlPanelWidget.setUserName(data.nickname);
+		});
+		App.sio.on('play',function(data){
+			vplayer.play(data.sname);
+		});
 		App.sio.on('receiveNewMsg', function (msg) {
 			App.widgets.ChatArea.addToChat('<p>' + msg + '</p>');
 		});

@@ -14,7 +14,7 @@ define(['jquery', 'underscore', 'backbone', 'views/chatcontent'], function ($, _
 		App.sio.on('welcome_to_chat_room', function (data) {
 			App.widgets.ChatArea.clearChat();
 			App.widgets.ChatArea.addToChat(data.msg);
-			App.widgets.ChatArea.addToChat('<span style="color:#757575">Now your room id(' + data.room + ')</span>');
+//			App.widgets.ChatArea.addToChat('<span style="color:#757575">Now your room id(' + data.room + ')</span>');
 			App.widgets.ctrlPanelWidget.setUserName(data.username);
 			publisher.connect(data.host);
 		});

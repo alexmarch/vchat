@@ -4,17 +4,31 @@ module.exports = function (app) {
 	var io = require('socket.io')(app),
 			userMgr = require('./users-manager'),
 			roomMgr = require('./rooms-manager'),
-			pubMgr = require('./publish-manager');
-	io.use(require('./session-auth').auth);
+			pubMgr = require('./publish-manager'),
+			debug = require('debug')('fancyflirt');
+
+	io.use(require('./session-auth').auth); //middleware authentication
+
 	io.sockets.on('connection',
 		function (socket) {
 			var data = userMgr.get(socket);
+			debug("Socket connection");
 			if (userMgr.isPerformer(data)) {
+				debug("Create new room");
 				roomMgr.create(data);
+			}else if(userMgr.isMember(data) || userMgr.isGuest(data)){
+				socket.emit('set_room');
 			}
+			socket.on('join_room',function(room){
+				debug("Client join the room "+ room.id);
+				userMgr.set(socket,'room','room'+room.id);
+				data.room = 'room'+room.id;
+				roomMgr.join(data);
+			});
 			socket.on('sendMessage', function (msg) {
 				//@todo permit message
-				if (userMgr.isPerformer(data)) {
+				var data = userMgr.get(socket);
+				if (userMgr.isPerformer(data) || userMgr.isMember(data)) {
 					roomMgr.sendToAll(data, msg);
 				}
 			});
