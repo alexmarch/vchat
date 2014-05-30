@@ -3,11 +3,14 @@
 define(['jquery', 'underscore', 'backbone', 'views/mchat/chatarea',
  'widgets/mchat/playerwidget'],
 	function ($, _, Backbone, ChatArea, PlayerWidget) {
-
-	var _template = '<div class="chatarea-ui">\
-	<div class="texture-wrapper">\
+	var _template = '<div class="chatarea-ui mchat">\
+	<div class="texture-wrapper mchat">\
 		<div class="chatarea-right-controls mchat">\
-			<div class="video-ui-widget"></div>\
+			<div class="video-ui-widget mchat"></div>\
+			<div class="private-buttons-group">\
+				<a href="#" class="pvt-btn premium-pvt-button">Premium private</a>\
+				<a href="#" class="pvt-btn pvt-button">Private</a>\
+			</div>\
 		</div>\
 		<div id="content"></div>\
 	</div>\

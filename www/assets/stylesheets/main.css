@@ -74,6 +74,9 @@
   background-image: url("../images/dest/texture.png");
   overflow: hidden;
 }
+.chatcontent-ui .texture-wrapper.mchat {
+  background-image: none;
+}
 .chatcontent-ui .texture {
   background-image: url("../images/dest/texture.png");
   width: 100%;
@@ -86,6 +89,9 @@
 .chatcontent-ui .chatarea-ui {
   background: url("../images/dest/chat-front-bg.png") repeat-x;
   height: 397px;
+}
+.chatcontent-ui .chatarea-ui.mchat {
+  height: 393px;
 }
 .chatcontent-ui #content {
   float: left;
@@ -100,8 +106,7 @@
   width: 650px;
   margin-left: 0px;
   margin-top: 0px;
-  background: #000;
-  height: 353px;
+  height: 395px;
 }
 .chatcontent-ui .settingsarea-ui {
   background: url("../images/dest/chat-settings-front-bg.png") repeat-x;
@@ -194,7 +199,10 @@
   font-size: 13px;
 }
 .chatarea .chatarea-input input[type="text"].mchat {
-  width: 421px;
+  float: left;
+  width: 327px;
+  border: none;
+  box-shadow: none;
 }
 .topic {
   font-size: 14px;
@@ -293,6 +301,9 @@
   background: url("../images/dest/chat-seperator-top.png") bottom repeat-x;
   overflow: hidden;
 }
+.controlpanel-ui ul.nav.mchat {
+  background: none;
+}
 .controlpanel-ui ul.nav li {
   float: left;
 }
@@ -314,6 +325,9 @@
   bottom: 0;
   position: absolute;
   width: 100%;
+}
+.controlpanel-ui ul.nav-bottom.mchat {
+  box-shadow: inset 0px 1px 18px rgba(0, 0, 0, 0.2);
 }
 .controlpanel-ui ul.nav-bottom .sprite {
   margin-left: 8px;
@@ -455,6 +469,11 @@
   width: 320px;
   height: 175px;
 }
+.video-ui-widget.mchat {
+  width: 650px;
+  height: 352px;
+  margin-left: 1px;
+}
 .userslist-widget {
   height: 215px;
   margin-top: 2px;
@@ -503,6 +522,94 @@
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+}
+.pvt-btn {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.premium-pvt-button {
+  background: url("../images/dest/normal-private-btn.png") no-repeat;
+  width: 301px;
+  height: 44px;
+  color: #fff;
+}
+.premium-pvt-button:hover {
+  background: url("../images/dest/over-private-btn.png") no-repeat;
+}
+.premium-pvt-button:active {
+  background: url("../images/dest/active-private-btn.png") no-repeat;
+}
+.pvt-button {
+  background: url("../images/dest/normal-private2-btn.png") no-repeat -1px -1px;
+  width: 345px;
+  height: 45px;
+  color: #fff;
+}
+.pvt-button:hover {
+  background: url("../images/dest/over-private2-btn.png") no-repeat -1px -1px;
+}
+.pvt-button:active {
+  background: url("../images/dest/active-private2-btn.png") no-repeat -1px -1px;
+}
+.send-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: url("../images/dest/send_button_bg.png");
+  width: 94px;
+  height: 37px;
+}
+.mchat-navbar {
+  list-style: none;
+  margin: 5px 0px 0px 50px;
+  padding: 0;
+}
+.mchat-navbar .nav-item {
+  float: left;
+  margin-left: 10px;
+}
+.mchat-navbar .nav-item a {
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mchat-navbar .icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mchat-navbar .icon-credits {
+  height: 34px;
+  width: 52px;
+  background: url("../images/dest/mchat-icons-credits.png");
+}
+.mchat-navbar .icon-add2f {
+  background: url("../images/dest/mchat-icons-addtofreands.png");
+  width: 34px;
+  height: 34px;
+}
+.mchat-navbar .icon-gifts {
+  background: url("../images/dest/mchat-icons-gifts.png");
+  width: 37px;
+  height: 34px;
+}
+.mchat-navbar .icon-info {
+  height: 34px;
+  width: 32px;
+  background: url("../images/dest/mchat-icons-info.png");
+}
+.mchat-navbar .icon-sound {
+  height: 34px;
+  width: 32px;
+  background: url("../images/dest/mchat-icons-sound.png");
+}
+.mchat-navbar .icon-fullsize {
+  height: 34px;
+  width: 35px;
+  background: url("../images/dest/mchat-icons-fullsize.png");
 }
 body {
   background: #242424;

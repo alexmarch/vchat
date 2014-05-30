@@ -1,4 +1,5 @@
 @import "jscrollpane";
+@import "mixins";
 
 .controlpanel-ui{
 	ul{
@@ -9,6 +10,9 @@
 			height: 46px;
 			background: url("../images/dest/chat-seperator-top.png") bottom repeat-x;
 			overflow: hidden;
+			&.mchat{
+				background: none;
+			}
 			li{
 				float: left;
 			}
@@ -33,6 +37,9 @@
 			bottom: 0;
 			position: absolute;
 			width: 100%;
+			&.mchat{
+				box-shadow: inset 0px 1px 18px rgba(0,0,0,0.2);
+			}
 			.sprite{
 				margin-left: 8px;
 				margin-top: 8px;
@@ -177,6 +184,11 @@
 	background: #000;
 	width: 320px;
 	height: 175px;
+	&.mchat{
+		width: 650px;
+		height: 352px;
+		margin-left: 1px;
+	}
 }
 //Users list widget
 .userslist-widget{
@@ -228,4 +240,43 @@
 	margin-top: 2px;
 	background: url("../images/dest/1x1-bg.png") repeat;
 	.radius(5px);
+}
+.pvt-btn{
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	line-height: 43px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.premium-pvt-button{
+	background: url("../images/dest/normal-private-btn.png") no-repeat;
+	width: 301px;
+	height: 44px;
+	color: #fff;
+	&:hover{
+		background: url("../images/dest/over-private-btn.png") no-repeat;
+	}
+	&:active{
+		background: url("../images/dest/active-private-btn.png") no-repeat;
+	}
+}
+.pvt-button{
+	background: url("../images/dest/normal-private2-btn.png") no-repeat -1px -1px;
+	width: 345px;
+	height: 45px;
+	color: #fff;
+	&:hover{
+		background: url("../images/dest/over-private2-btn.png") no-repeat -1px -1px;
+	}
+	&:active{
+		background: url("../images/dest/active-private2-btn.png") no-repeat -1px -1px;
+	}
+}
+.send-btn{
+	display: inline-block;
+	text-decoration: none;
+	background: url("../images/dest/send_button_bg.png");
+	width: 94px;
+	height: 37px;
 }

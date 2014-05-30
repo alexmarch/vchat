@@ -6,7 +6,7 @@ define(['jquery', 'underscore', 'backbone', 'widgets/mchat/controlpanelwidget'],
 			<div class="sprite sprite-chats_29 bg-image"></div>\
 			<div class="content mchat"></div>\
 		</div>\
-		<div class="chatarea-input mchat"><input type="text" placeholder="Enter here" name="inputText" id="inputText" class="mchat" /></div>';
+		<div class="chatarea-input mchat"><input type="text" placeholder="Enter here" name="inputText" id="inputText" class="mchat" /><a href="#" class="send-btn"></a></div>';
 	var ChatArea = Backbone.View.extend({
 		className: 'chatarea mchat',
 		id: 'chatarea',

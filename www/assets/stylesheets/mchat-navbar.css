@@ -1,0 +1,49 @@
+.mchat-navbar {
+  list-style: none;
+  margin: 5px 0px 0px 50px;
+  padding: 0;
+}
+.mchat-navbar .nav-item {
+  float: left;
+  margin-left: 10px;
+}
+.mchat-navbar .nav-item a {
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mchat-navbar .icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mchat-navbar .icon-credits {
+  height: 34px;
+  width: 52px;
+  background: url("../images/dest/mchat-icons-credits.png");
+}
+.mchat-navbar .icon-add2f {
+  background: url("../images/dest/mchat-icons-addtofreands.png");
+  width: 34px;
+  height: 34px;
+}
+.mchat-navbar .icon-gifts {
+  background: url("../images/dest/mchat-icons-gifts.png");
+  width: 37px;
+  height: 34px;
+}
+.mchat-navbar .icon-info {
+  height: 34px;
+  width: 32px;
+  background: url("../images/dest/mchat-icons-info.png");
+}
+.mchat-navbar .icon-sound {
+  height: 34px;
+  width: 32px;
+  background: url("../images/dest/mchat-icons-sound.png");
+}
+.mchat-navbar .icon-fullsize {
+  height: 34px;
+  width: 35px;
+  background: url("../images/dest/mchat-icons-fullsize.png");
+}

@@ -19,6 +19,9 @@
   background-image: url("../images/dest/texture.png");
   overflow: hidden;
 }
+.chatcontent-ui .texture-wrapper.mchat {
+  background-image: none;
+}
 .chatcontent-ui .texture {
   background-image: url("../images/dest/texture.png");
   width: 100%;
@@ -31,6 +34,9 @@
 .chatcontent-ui .chatarea-ui {
   background: url("../images/dest/chat-front-bg.png") repeat-x;
   height: 397px;
+}
+.chatcontent-ui .chatarea-ui.mchat {
+  height: 393px;
 }
 .chatcontent-ui #content {
   float: left;
@@ -45,8 +51,7 @@
   width: 650px;
   margin-left: 0px;
   margin-top: 0px;
-  background: #000;
-  height: 353px;
+  height: 395px;
 }
 .chatcontent-ui .settingsarea-ui {
   background: url("../images/dest/chat-settings-front-bg.png") repeat-x;
@@ -139,7 +144,10 @@
   font-size: 13px;
 }
 .chatarea .chatarea-input input[type="text"].mchat {
-  width: 421px;
+  float: left;
+  width: 327px;
+  border: none;
+  box-shadow: none;
 }
 .topic {
   font-size: 14px;

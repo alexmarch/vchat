@@ -2,12 +2,35 @@
 
 define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 
-	var _template = '<ul class="nav">\
+	var _template = '<ul class="nav mchat">\
 			<li><span class="username mchat"></span></li>\
 			</ul>\
-			<ul class="nav-bottom">\
+			<ul class="nav-bottom mchat">\
 				<li><a href="#"><span class="sprite sprite-chats_33"></span></a></li>\
 				<li><a href="#"><span class="sprite sprite-chats_36"></span></a></li>\
+				<li><a href="#"><span class="sprite sprite-chats_25"></span></a></li>\
+				<li>\
+				<ul class="mchat-navbar">\
+					<li class="nav-item">\
+						<a class="icon icon-credits"></a>\
+					</li>\
+					<li class="nav-item">\
+						<a class="icon icon-add2f"></a>\
+					</li>\
+					<li class="nav-item">\
+						<a class="icon icon-gifts"></a>\
+					</li>\
+					<li class="nav-item">\
+						<a class="icon icon-info"></a>\
+					</li>\
+					<li class="nav-item">\
+						<a class="icon icon-sound"></a>\
+					</li>\
+					<li class="nav-item">\
+						<a class="icon icon-fullsize"></a>\
+					</li>\
+				</ul>\
+				</li>\
 			</ul>';
 
 	var ControlPanelView = Backbone.View.extend({
