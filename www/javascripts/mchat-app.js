@@ -29,7 +29,11 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function
 		});
 		App.sio.on('join_successful',function(data){
 			vplayer.connect(data);
+			console.log(data);
 			App.widgets.ctrlPanelWidget.setUserName(data.nickname);
+			if(data.topic){
+				App.widgets.ChatArea.addToChat(data.topic);
+			}
 		});
 		App.sio.on('play',function(data){
 			vplayer.play(data.sname);
@@ -75,9 +79,9 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function
 		}
 	};
 
-	App.settopic = function(title){
-		App.sio.emit("settopic",{title: title});
-	}
+	//App.settopic = function(title){
+		//App.sio.emit("settopic",{title: title});
+//	}
 
 	App.views.ChatContent = new ChatContent();
 

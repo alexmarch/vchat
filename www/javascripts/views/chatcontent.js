@@ -12,7 +12,7 @@ define(['jquery', 'underscore', 'backbone', 'views/chatarea', '../widgets/chatse
 		</div>\
 	</div>\
 	</div>\
-			<div class="settingsarea-ui" style="display: none">\
+			<div class="settingsarea-ui">\
 				<div class="texture-wrapper">\
 					<div class="settingsarea-wrapper-ui">\
 					<div id="chatsettingswidget"></div>\

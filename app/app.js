@@ -64,11 +64,11 @@ module.exports = function (app) {
 			});
 			socket.on("settopic",function(topic){
 				if(userMgr.isPerformer(data)){
-					userMgr.set(socket,"topic",topic.title);
 					var newTopic = {
 						title: '<div class="topic"><span>'+data.nickname + ' Room tipic: </span>'+topic.title+'</div>',
 						nickname: data.nickname
 					};
+					userMgr.set(socket,"topic",newTopic.title);
 					socket.emit("topic_change", newTopic);
 					socket.broadcast.to(roomMgr.getRoom(data)).emit("topic_change", newTopic);
 				}
