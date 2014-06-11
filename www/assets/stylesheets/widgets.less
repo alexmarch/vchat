@@ -1,58 +1,57 @@
 @import "jscrollpane";
 @import "mixins";
 
-.controlpanel-ui{
-	ul{
-		&.nav{
+.controlpanel-ui {
+	ul {
+		&.nav {
 			margin: 0;
 			padding: 0;
 			list-style: none;
 			height: 46px;
 			background: url("../images/dest/chat-seperator-top.png") bottom repeat-x;
 			overflow: hidden;
-			&.mchat{
+			&.mchat {
 				background: none;
 			}
-			li{
+			li {
 				float: left;
 			}
-			.sprite{
+			.sprite {
 				margin-left: 15px;
 				margin-top: 8px;
 				opacity: 0.8;
-				&:hover{
+				&:hover {
 					opacity: 1;
 				}
 			}
 		}
 	}
-	ul{
-		&.nav-bottom{
+	ul {
+		&.nav-bottom {
 			margin: 0;
 			padding: 0;
 			list-style: none;
 			height: 46px;
 			background: url("../images/dest/chat-seperator-bottom.png") top repeat-x;
-			overflow: hidden;
 			bottom: 0;
 			position: absolute;
 			width: 100%;
-			&.mchat{
-				box-shadow: inset 0px 1px 18px rgba(0,0,0,0.2);
+			&.mchat {
+				box-shadow: inset 0px 1px 18px rgba(0, 0, 0, 0.2);
 			}
-			.sprite{
+			.sprite {
 				margin-left: 8px;
 				margin-top: 8px;
 			}
-			li{
+			li {
 				float: left;
 			}
 		}
 	}
-	.button-controls{
-		margin-left: 82px;
+	.button-controls {
+		margin-left: 49px;
 		margin-top: 11px;
-		.c-button{
+		.c-button {
 			background: url('../images/dest/c-button-bg.png') no-repeat;
 			font-size: 12px;
 			font-family: Arial, Helvetica, sans-serif;
@@ -63,45 +62,45 @@
 			font-weight: normal;
 			display: inline-block;
 			text-align: center;
-			text-shadow: 0px 1px 0px rgba(255,255,255,0.6);
+			text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
 			letter-spacing: 0px;
 			line-height: 16px;
 		}
 	}
-	.user{
+	.user {
 		color: #000 !important;
 	}
-	.username{
+	.username {
 		font-size: 14.03px;
 		color: #a68485;
 		padding: 6px;
 		line-height: 42px;
 		padding-right: 0px;
 		cursor: pointer;
-		&.mchat{
+		&.mchat {
 			font-size: 18px;
 			font-weight: bold;
 		}
 	}
-	.topic{
+	.topic {
 		.radius(5px);
-		border: 1px solid rgba(0,0,0,0.3);
-		-webkit-box-shadow: inset 0px 2px 3px rgba(0,0,0,0.1);
-		-moz-box-shadow: inset 0px 2px 3px rgba(0,0,0,0.1);
-		box-shadow: inset 0px 2px 3px rgba(0,0,0,0.1);
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
 		width: 335px;
 		height: 24px;
 		margin-top: 8px;
 		margin-left: 10px;
 		position: relative;
-		.inner-wrapper{
+		.inner-wrapper {
 			width: 100%;
 			height: 100%;
-			-webkit-box-shadow: inset 0px 0px 3px rgba(255,255,255,0.5);
-			-moz-box-shadow: inset 0px 0px 3px rgba(255,255,255,0.5);
-			box-shadow: inset 0px 0px 3px rgba(255,255,255,0.5);
+			-webkit-box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+			-moz-box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+			box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.5);
 		}
-		input[type="text"]{
+		input[type="text"] {
 			border: none;
 			outline: none;
 			background: none;
@@ -110,7 +109,7 @@
 			font-size: 14px;
 			color: #5e5e5e;
 		}
-		.settopic-button{
+		.settopic-button {
 			background: url("../images/dest/settopic-button-bg.png") repeat-x;
 			height: 25px;
 			text-decoration: none;
@@ -125,22 +124,23 @@
 			color: #000;
 			font-weight: bold;
 			font-size: 14px;
-			box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 		}
 	}
 }
-.chatsettings-navbar-ui{
-	.icon-file{
+
+.chatsettings-navbar-ui {
+	.icon-file {
 		background: url('../images/dest/file-icon.png') no-repeat;
-		width:18px;
+		width: 18px;
 		height: 23px;
 		display: inline-block;
 		margin-right: 4px;
 		margin-top: 4px;
 		position: absolute;
-		left:0px;
+		left: 0px;
 	}
-	.checkbox{
+	.checkbox {
 		background: url("../images/dest/checkbox-normal.png") no-repeat;
 		width: 19px;
 		height: 19px;
@@ -149,29 +149,29 @@
 		margin-top: 6px;
 		position: absolute;
 
-		left:0px;
-		&.checked{
+		left: 0px;
+		&.checked {
 			background: url("../images/dest/checkbox-checked.png") no-repeat !important;
 		}
 	}
-	ul{
-		&.navbar-settings{
+	ul {
+		&.navbar-settings {
 			margin: 0;
 			padding: 0;
 			list-style: none;
 			margin-left: 155px;
 			margin-top: 31px;
-			li{
+			li {
 				float: left;
-				a{
+				a {
 					text-decoration: none;
-					color: rgba(255,255,255,0.8);
+					color: rgba(255, 255, 255, 0.8);
 					font-size: 0.7em;
 					margin-left: 15px;
 					font-weight: normal;
 					letter-spacing: 0px;
 					font-family: Verdana, Arial, Helvetica, sans-serif;
-					&.icon{
+					&.icon {
 						padding-left: 28px;
 						display: inline-block;
 						position: relative;
@@ -182,61 +182,81 @@
 		}
 	}
 }
+
 //Video ui widget
-.video-ui-widget{
+.video-ui-widget {
 	background: #000;
 	width: 320px;
 	height: 175px;
-	&.mchat{
+	&.mchat {
 		width: 650px;
 		height: 352px;
 		margin-left: 1px;
 	}
 }
+
 //Users list widget
-.userslist-widget{
-//	background: rgba(0,0,0,0.3);
-//	width: 320px;
+.userslist-widget {
+	//	background: rgba(0,0,0,0.3);
+	//	width: 320px;
 	height: 215px;
 	margin-top: 2px;
 	overflow: hidden;
 	float: left;
 	width: 164px;
-	ul{
+	ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		margin-left: 10px;
 		font-size: 14px;
-		a{
+		a {
 			color: #fff;
 			font-size: 14px;
 			text-decoration: none;
 			display: inline-block;
-			&:hover{
+			&:hover {
 				color: #ffad10;
 			}
 		}
-		&.viewport{
+		&.viewport {
 			width: 200px;
 		}
-		li{
+		li {
 			padding: 2px;
 		}
 	}
 }
-#userslist-scrollbar
-{
+
+#userslist-scrollbar {
 	width: 160px;
 	height: 200px;
 	overflow: hidden;
 }
-.userlistwidget{
+
+#chatarea-scrollbar {
+	width: 734px;
+	height: 263px;
+	overflow: hidden;
+}
+
+#mchatarea-scrollbar {
+	width: 429px;
+	height: 263px;
+	overflow: hidden;
+}
+
+.mchat-scrollbar {
+	width: 410px;
+}
+
+.userlistwidget {
 	width: 160px;
 	overflow: hidden;
 	float: left;
 }
-.userpreviewwidget{
+
+.userpreviewwidget {
 	width: 156px;
 	height: 215px;
 	float: left;
@@ -244,7 +264,8 @@
 	background: url("../images/dest/1x1-bg.png") repeat;
 	.radius(5px);
 }
-.pvt-btn{
+
+.pvt-btn {
 	text-decoration: none;
 	display: inline-block;
 	text-align: center;
@@ -252,34 +273,178 @@
 	font-weight: bold;
 	font-size: 18px;
 }
-.premium-pvt-button{
+
+.premium-pvt-button {
 	background: url("../images/dest/normal-private-btn.png") no-repeat;
 	width: 301px;
 	height: 44px;
 	color: #fff;
-	&:hover{
+	&:hover {
 		background: url("../images/dest/over-private-btn.png") no-repeat;
 	}
-	&:active{
+	&:active {
 		background: url("../images/dest/active-private-btn.png") no-repeat;
 	}
 }
-.pvt-button{
+
+.pvt-button {
 	background: url("../images/dest/normal-private2-btn.png") no-repeat -1px -1px;
 	width: 345px;
 	height: 45px;
 	color: #fff;
-	&:hover{
+	&:hover {
 		background: url("../images/dest/over-private2-btn.png") no-repeat -1px -1px;
 	}
-	&:active{
+	&:active {
 		background: url("../images/dest/active-private2-btn.png") no-repeat -1px -1px;
 	}
 }
-.send-btn{
+
+.send-btn {
 	display: inline-block;
 	text-decoration: none;
 	background: url("../images/dest/send_button_bg.png");
 	width: 94px;
 	height: 37px;
+}
+
+.choosemember {
+	color: #ba0101;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	margin-top: 91px;
+	text-align: center;
+	display: block;
+}
+
+.colorSliderWrapper {
+	position: absolute;
+	width: 200px;
+	bottom: 32px;
+	z-index: 100;
+	background: #858585;
+	padding: 0px;
+	padding-top: 5px;
+	.radius(3px);
+	border: 1px solid #5e5f5f;
+
+	#colorSlider {
+		width: 200px;
+	}
+}
+
+.defaulColor {
+	width: 20px;
+	height: 20px;
+	background: rgb(0, 0, 0);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	cursor: pointer;
+	border: 2px solid #fff;
+}
+
+.currentColor {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	cursor: pointer;
+	border: 2px solid #fff;
+}
+
+#changeFont {
+	position: absolute;
+	right: 35px;
+	top: 49px;
+}
+
+#msg {
+	word-wrap: break-word;
+}
+
+.content {
+	p {
+		display: block;
+	}
+}
+
+.translate-ui-bar {
+	padding: 4px;
+
+.tfrom,.tto{
+	span{
+		float: left;
+		display: block;
+		width: 50px;
+		line-height: 31px;
+		text-align: right;
+		padding-right: 2px;
+	}
+}
+.checkbox {
+	background: url("../images/dest/checkbox-normal.png") no-repeat;
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	margin-right: 4px;
+	margin-top: 6px;
+	position: absolute;
+
+	left: 0px;
+	&.checked {
+		background: url("../images/dest/checkbox-checked.png") no-repeat !important;
+	}
+}
+
+.from-lang, .to-lang {
+	height: 15px;
+	width: 1000px;
+	background: #000;
+	margin-left: 55px;
+	.radius(5px);
+	padding: 10px;
+}
+
+.to-lang {
+	margin-top: 2px;
+}
+
+.button-controls {
+	margin-left: 40px;
+	margin-top: 0px;
+	a {
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.8);
+		font-size: 0.7em;
+		margin-left: 15px;
+		font-weight: normal;
+		letter-spacing: 0px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		&.icon {
+			padding-left: 28px;
+			display: inline-block;
+			position: relative;
+			line-height: 30px;
+		}
+	}
+	.c-button {
+		background: url('../images/dest/c-button-bg.png') no-repeat;
+		font-size: 12px;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #666666;
+		text-decoration: none;
+		height: 19px;
+		width: 118px;
+		font-weight: normal;
+		display: inline-block;
+		text-align: center;
+		text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+		letter-spacing: 0px;
+		line-height: 16px;
+	}
+}
+
 }

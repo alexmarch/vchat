@@ -2,6 +2,7 @@ module.exports = {
 	permormers: {},
 	members: {},
 	guests: {},
+
 	add: function (s, data) {
 		if (data) {
 			switch (data['utype']) {

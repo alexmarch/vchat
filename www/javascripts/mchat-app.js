@@ -1,7 +1,6 @@
 'use strict';
 
 define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function ($, _, Backbone, ChatContent) {
-
 	window.App = window.App || {};
 	window.App = {
 		views: {},
@@ -9,7 +8,6 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function
 		widgets: {},
 		sio: {}
 	};
-
 	App.bindevents = function () {
 		App.sio.on('welcome_to_chat_room', function (data) {
 			App.widgets.ChatArea.clearChat();
@@ -29,26 +27,35 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function
 		});
 		App.sio.on('join_successful',function(data){
 			vplayer.connect(data);
-			console.log(data);
+			console.log("Data:",data);
 			App.widgets.ctrlPanelWidget.setUserName(data.nickname);
 			if(data.topic){
 				App.widgets.ChatArea.addToChat(data.topic);
 			}
 		});
 		App.sio.on('play',function(data){
-			vplayer.play(data.sname);
+			vplayer.play(data.name);
 		});
-		App.sio.on('receiveNewMsg', function (msg) {
-			App.widgets.ChatArea.addToChat('<p>' + msg + '</p>');
+		App.sio.on('receiveNewMsg', function (msg,color) {
+			var $msg = $(msg);
+			$msg.find('#msg').css({'color':color});
+			App.widgets.ChatArea.addToChat('<p>'+$msg.html()+'</p>');
 		});
-
+		App.sio.on('memberarea', function(data){
+			vplayer.memberarea();
+		});
+		App.sio.on('closememberarea', function(data){
+			vplayer.closememberarea();
+		});
 		App.sio.on('publish', function (data) {
 			publisher.publish(data);
 			if(data.type === "memberarea"){
-				publisher.memberarea();
+				vplayer.memberarea();
+			}else if(data.type === "free"){
+				vplayer.closememberarea();
 			}else{
-				if(publisher.inMemberArea()){
-					publisher.closemember();
+				if(vplayer.inMemberArea()){
+					vplayer.closemember();
 				}
 			}
 		});

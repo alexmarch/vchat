@@ -76,10 +76,19 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			App.sio.emit('get_stream');
 		};
 
-		this.play = function(hame){
+		this.memberarea = function(){
+			this.swf.memberarea();
+		};
+
+		this.closememberarea = function(){
+			this.swf.closememberarea();
+		};
+
+		this.play = function(name){
 			try {
 				if (this.swf) {
-					this.swf.play(host);
+					console.log("Stream name:",name);
+					this.swf.play(name);
 				}
 			} catch (e) {
 				//catch exception

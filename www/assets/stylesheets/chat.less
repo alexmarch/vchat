@@ -76,9 +76,11 @@
 		position: relative;
 		width: 756px;
 		height: 353px;
+
 		&.mchat{
 			width: @mchatContentWidth;
 		}
+
 		.bg-image{
 			position: absolute;
 			left: 50%;
@@ -86,20 +88,22 @@
 			top: 50%;
 			margin-top: -76px;
 		}
+
 		.content{
-			width: 734px;
-			height: 239px;
-			overflow: auto;
+			width: 700px;
 			padding: 10px;
 			color: #000;
 			text-shadow: 0px 1px 0px rgba(255,255,255,0.4);
 			font-size: 14px;
+
 			.msg{
 				font-style: italic;
 			}
+
 			&.mchat{
-				width: @mchatContentWidth;
+				width: 350px;
 			}
+
 			.user{
 				color: #626262 !important;
 			}

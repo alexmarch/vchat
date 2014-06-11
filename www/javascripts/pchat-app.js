@@ -19,8 +19,10 @@ define(['jquery', 'underscore', 'backbone', 'views/chatcontent'], function ($, _
 			publisher.connect(data.host);
 		});
 
-		App.sio.on('receiveNewMsg', function (msg) {
-			App.widgets.ChatArea.addToChat('<p>' + msg + '</p>');
+		App.sio.on('receiveNewMsg', function (msg,color) {
+			var $msg = $(msg);
+			$msg.find('#msg').css({'color':color});
+			App.widgets.ChatArea.addToChat('<p>'+$msg.html()+'</p>');
 		});
 
 		App.sio.on('publish', function (data) {
@@ -41,9 +43,14 @@ define(['jquery', 'underscore', 'backbone', 'views/chatcontent'], function ($, _
 		App.sio.on('topic_change', function(data){
 			App.widgets.ChatArea.addToChat(data.title);
 		});
+
+		App.sio.on('reset_users_list',function(clients){
+			App.widgets.UsersList.reset(clients);
+		});
 	};
 
 	App.connect = function () {
+		console.log("connect");
 		this.sio = io.connect('http://localhost:3000');
 		this.bindevents();
 	};

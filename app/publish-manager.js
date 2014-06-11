@@ -18,6 +18,7 @@ module.exports = {
 		o.socket.emit('publish', {name: data.name, type: data.type});
 		if (data.type === "free") {
 			o.socket.broadcast.to(room).emit('play', {name: data.name});
+			o.socket.broadcast.to(room).emit('closememberarea');
 		}
 		if (data.type === "memberarea") {
 			o.socket.broadcast.to(room).emit('memberarea');

@@ -15,6 +15,7 @@ exports.auth = function(s, next){
 		method: 'POST'
 	},
 	req = null;
+	debug("Auth socket");
 	cookies = cookie.parse(cookies);
 	if(cookies[sidkey]){
 		var data = querystring.stringify({sid:cookies[sidkey]});

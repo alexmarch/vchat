@@ -21,6 +21,7 @@
 	"dependencies": {
 		"backbone": "1.1.x",
 		"bootstrap": "~3.1.1",
-		"requirejs": "*"
+		"requirejs": "*",
+		"emoticons": "~0.1.7"
 	}
 }

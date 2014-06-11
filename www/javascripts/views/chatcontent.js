@@ -9,6 +9,8 @@ define(['jquery', 'underscore', 'backbone', 'views/chatarea', '../widgets/chatse
 		<div id="content"></div>\
 		<div class="chatarea-right-controls">\
 			<div class="video-ui-widget"></div>\
+			<div class="userslist-widget"></div>\
+			<div class="userpreviewwidget"><span class="choosemember">choose member</span></div> \
 		</div>\
 	</div>\
 	</div>\
