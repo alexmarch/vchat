@@ -22,7 +22,6 @@
 		"backbone": "1.1.x",
 		"bootstrap": "~3.1.1",
 		"requirejs": "*",
-		"emoticons": "~0.1.7",
-		"escape-htm": "~1.0.1"
+		"emoticons": "~0.1.7"
 	}
 }

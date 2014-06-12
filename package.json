@@ -18,6 +18,7 @@
 		"debug": "~0.8.1",
 		"cookie": "*",
 		"querystring": "*",
-		"underscore.string": "*"
+		"underscore.string": "*",
+		"escape-htm": "~1.0.1"
 	}
 }
