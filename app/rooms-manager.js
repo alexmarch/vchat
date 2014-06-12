@@ -21,6 +21,9 @@ module.exports = {
 			host: conf.host
 		});
 	},
+	getRoomData: function(name){
+		return this.rooms[name];
+	},
 	exit: function (data) {
 		var name = "room" + data.uid;
 		data.socket.leave(name);

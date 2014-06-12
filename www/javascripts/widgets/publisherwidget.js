@@ -74,6 +74,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 	PublisherController.prototype = {
 		init: function () {
 			this.obj = this.publisherInit();
+			console.log(this.obj);
 			App.connect();
 		},
 		connect: function(host){

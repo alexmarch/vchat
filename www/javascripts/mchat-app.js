@@ -47,6 +47,29 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function
 		App.sio.on('closememberarea', function(data){
 			vplayer.closememberarea();
 		});
+		App.sio.on('start_private', function(data){
+			/**
+			 * @todo - Start private with performer
+			 */
+			console.log("START PRIVATE FROM SERVER");
+			App.inPrivate = true;
+			App.widgets.ctrlPanelWidget.showPrivateLabel();
+		});
+		App.sio.on('performer_in_private', function(data){
+			/**
+			 * @todo - Performer in private chat
+			 */
+			if(!App.inPrivate){
+				console.log("SHOW PRIVATE WINDOW");
+			}
+		});
+		App.sio.on('end_private', function(data){
+			/**
+			 * @todo - Start private with performer
+			 */
+			App.inPrivate = false;
+			App.widgets.ctrlPanelWidget.hidePrivateLabel();
+		});
 		App.sio.on('publish', function (data) {
 			publisher.publish(data);
 			if(data.type === "memberarea"){

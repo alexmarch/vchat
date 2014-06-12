@@ -8,8 +8,8 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatarea',
 		<div class="chatarea-right-controls mchat">\
 			<div class="video-ui-widget mchat"></div>\
 			<div class="private-buttons-group">\
-				<a href="#" class="pvt-btn premium-pvt-button">Premium private</a>\
-				<a href="#" class="pvt-btn pvt-button">Private</a>\
+				<a href="#" class="pvt-btn premium-pvt-button" id="premiumPrivate">Premium private</a>\
+				<a href="#" class="pvt-btn pvt-button" id="private">Private</a>\
 			</div>\
 		</div>\
 		<div id="content"></div>\
@@ -27,6 +27,10 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatarea',
 		id: 'chatcontent',
 		className: 'chatcontent-ui mchat',
 		template: _.template(_template),
+		events: {
+			'click #premiumPrivate':'premiumClickHandler',
+			'click #private':'privateClickHandler'
+		},
 		render: function(){
 			//Render chat area
 			App.widgets.ChatArea = new ChatArea();
@@ -42,6 +46,13 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatarea',
 			window.vplayer = new VPlayerWidget();
 			this.$('.video-ui-widget').html(vplayer.elem());
 			return this;
+		},
+		premiumClickHandler: function(){
+			App.sio.emit('start_premium_private');
+		},
+		privateClickHandler: function(){
+			console.log('start private');
+			App.sio.emit('start_private');
 		}
 	});
 

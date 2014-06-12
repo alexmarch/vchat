@@ -380,13 +380,14 @@
   font-size: 14.03px;
   color: #a68485;
   padding: 6px;
-  line-height: 42px;
   padding-right: 0px;
   cursor: pointer;
+  line-height: 45px;
 }
 .controlpanel-ui .username.mchat {
   font-size: 18px;
   font-weight: bold;
+  line-height: 20px;
 }
 .controlpanel-ui .topic {
   border-radius: 5px;

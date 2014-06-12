@@ -8,12 +8,7 @@ exports.auth = function(s, next){
 	querystring = require('querystring'),
 	userMgr = require('./users-manager'),
 	roomMgr = require('./rooms-manager'),
-	options = {
-		host:'localhost',
-		port: 8081,
-		path: '/api/auth.php',
-		method: 'POST'
-	},
+	options = require('./config').options,
 	req = null;
 	debug("Auth socket");
 	cookies = cookie.parse(cookies);

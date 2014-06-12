@@ -3,7 +3,8 @@
 define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor', 'colorpicker'], function ($, _, Backbone, defs, tinycolor, colorpicker) {
 
 	var _template = '<ul class="nav mchat">\
-			<li><span class="username mchat"></span></li>\
+			<li style="text-align: right"><div id="privatewith" style="display: none;padding: 0px;font-size: 13px;color: #a68485;font-weight: bold;">private with</div>\
+			<span class="username mchat"></span></li>\
 			</ul>\
 			<ul class="nav-bottom mchat">\
 				<li>\
@@ -161,6 +162,12 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 		this.setUserName = function (username) {
 			this._view.$('.username').text(username);
 		};
+		this.showPrivateLabel = function () {
+			this._view.$('#privatewith').show();
+		};
+		this.hidePrivateLabel = function () {
+			this._view.$('#privatewith').hide();
+		}
 		this.init();
 	};
 

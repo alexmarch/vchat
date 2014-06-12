@@ -23,6 +23,14 @@ module.exports = {
 		if (data.type === "memberarea") {
 			o.socket.broadcast.to(room).emit('memberarea');
 		}
+		if( data.type === "private"){
+			data.socket.emit('play', {name: data.name});
+			o.socket.broadcast.to(room).emit('closememberarea');
+		}
+		if( data.type === "premium"){
+			data.socket.emit('play', {name: data.name});
+			o.socket.broadcast.to(room).emit('closememberarea');
+		}
 		debug("Publish new stream:" + data.name);
 	},
 	unpublish: function (o) {
