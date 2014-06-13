@@ -39,7 +39,11 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 					<span class="sprite sprite-chats_36"></span>\
 				</a>\
 				</li>\
-				<li>\
+				<li style="position: relative">\
+				<div class="fontChageWrapper" style="display: none">\
+				<div class="fontDown" id="fontUp">-</div>\
+				<div class="fontUp" id="fontDown">+</div>\
+				</div>\
 				<a href="#" id="fontButton">\
 					<span class="sprite sprite-chats_25"></span>\
 				</a>\
@@ -66,7 +70,10 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 			'click #colorButton': 'colorButtonClick',
 			'click .defaulColor': 'defaultColorClick',
 			'click #dictionaryButton': 'showDictionaryClick',
-			'click #settingsButton': 'showSettingsClick'
+			'click #settingsButton': 'showSettingsClick',
+			'click #fontButton': 'fontButtonClick',
+			'click #fontUp': "fontUpClick",
+			'click #fontDown': "fontDownClick"
 		},
 		initialize: function () {
 			this.$el.addClass(this.className);
@@ -112,6 +119,19 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 			} else {
 				this.$('.colorSliderWrapper').hide();
 			}
+		},
+		fontButtonClick: function(){
+			if (this.$('.fontChageWrapper').css('display') === 'none') {
+				this.$('.fontChageWrapper').show();
+			} else {
+				this.$('.fontChageWrapper').hide();
+			}
+		},
+		fontUpClick: function(){
+			this.$('.fontChageWrapper').hide();
+		},
+		fontDownClick: function(){
+			this.$('.fontChageWrapper').hide();
 		},
 		smileyClick: function (e) {
 			if (this.$('.emoticons-panell-ui').css('display') === 'none') {
