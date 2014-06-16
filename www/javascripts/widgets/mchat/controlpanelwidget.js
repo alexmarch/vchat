@@ -30,7 +30,14 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 				<li>\
 				<div class="colorSliderWrapper" style="display: none; bottom: 46px;"><div id="colorSlider"></div><div class="currentColor"></div><div class="defaulColor"></div></div>\
 				<a id="colorButton" href="#"><span class="sprite sprite-chats_36"></span></a></li>\
-				<li><a href="#"><span class="sprite sprite-chats_25"></span></a></li>\
+				<li>\
+					<div class="fontChageWrapper mchat" style="display: none">\
+					<div class="fontDown" id="fontDown">-</div>\
+					<div class="fontUp" id="fontUp">+</div>\
+					<div class="cfont" id="cfont"></div>\
+					</div>\
+					<a href="#" id="fontButton"><span class="sprite sprite-chats_25"></span></a>\
+				</li>\
 				<li>\
 				<ul class="mchat-navbar">\
 					<li class="nav-item">\
@@ -59,6 +66,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 		className: 'controlpanel-ui',
 		id: 'controlpanel',
 		template: _.template(_template),
+		fontSize: 14,
 		events: {
 			'click #toolsPanel': 'switchTools',
 			'click #memberAreaButton': 'memberAreaClick',
@@ -67,7 +75,10 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 			'click #smileyPanel': 'smileyClick',
 			'click .emoticon': 'emoticonClick',
 			'click #colorButton': 'colorButtonClick',
-			'click .defaulColor': 'defaultColorClick'
+			'click .defaulColor': 'defaultColorClick',
+			'click #fontButton': 'fontButtonClick',
+			'click #fontUp': "fontUpClick",
+			'click #fontDown': "fontDownClick"
 		},
 
 		initialize: function () {
@@ -103,6 +114,24 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 			this.rgba = tinycolor(this.$('.defaultColor').css('color')).toRgb();
 			this.$('.currentColor').css({'background': '#' + tinycolor(this.$('.defaultColor').css('color')).toHex()});
 			return this;
+		},
+		fontButtonClick: function () {
+			if (this.$('.fontChageWrapper').css('display') === 'none') {
+				this.$('.fontChageWrapper').show();
+				this.$('.fontChageWrapper').find('#cfont').text(this.fontSize + 'px');
+			} else {
+				this.$('.fontChageWrapper').hide();
+			}
+		},
+		fontUpClick: function () {
+			//this.$('.fontChageWrapper').hide();
+			this.fontSize = this.fontSize < 20 ? this.fontSize + 1 : this.fontSize;
+			this.$('.fontChageWrapper').find('#cfont').text(this.fontSize + 'px');
+		},
+		fontDownClick: function () {
+			//this.$('.fontChageWrapper').hide();
+			this.fontSize = this.fontSize > 14 ? this.fontSize - 1 : this.fontSize;
+			this.$('.fontChageWrapper').find('#cfont').text(this.fontSize + 'px');
 		},
 		smileyClick: function (e) {
 			if (this.$('.emoticons-panell-ui').css('display') === 'none') {

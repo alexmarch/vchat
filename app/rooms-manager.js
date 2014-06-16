@@ -73,15 +73,21 @@ module.exports = {
 			this.rooms[name].socket.emit('reset_users_list',this.rooms[name].clients);
 		}
 	},
-	sendToAll: function (data, msg, color) {
+	sendToAll: function (data, msg, color, fontSize) {
 		if(_s.trim(msg) === '') return;
 		msg = escape(msg);
 		var r = color.r;
 		var g = color.g;
 		var b = color.b;
 		var color = color ? 'rgb('+r+','+g+','+b+')' : '';
-		var msg = '<span class="msg"><span class="'+(data.utype === 2 ? 'user' : '')+' nickname">' + data.nickname + '</span>: <span id="msg">'+
-			msg + '</span></span>';
+		if(fontSize >= 14 && fontSize <= 20){
+			 fontSize = 'style="font-size:'+fontSize+'px"';
+		}else{
+			fontSize = 'style="font-size:14px"';
+		}
+		var msg = '<span class="msg"><span '+fontSize+'><span class="'+(data.utype === 2 ? 'user' : '')+' nickname">' + data.nickname + '</span>: <span id="msg">'+
+			msg + '</span></span></span>';
+		debug(msg);
 		if (data.room) {
 			data.socket.broadcast.to(data.room).emit('receiveNewMsg', msg, color);
 		} else {

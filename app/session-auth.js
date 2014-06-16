@@ -13,6 +13,10 @@ exports.auth = function(s, next){
 	debug("Auth socket");
 	cookies = cookie.parse(cookies);
 	if(cookies[sidkey]){
+		/** ///////////////////////////////////////
+		 * Authentication user with session id
+		 * ///////////////////////////////////////
+		 */
 		var data = querystring.stringify({sid:cookies[sidkey]});
 		options["headers"] = {
 			'Content-Type': 'application/x-www-form-urlencoded',

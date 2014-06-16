@@ -147,7 +147,6 @@
   padding: 10px;
   color: #000;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
-  font-size: 14px;
 }
 .chatarea .chatarea-content .content .msg {
   font-style: italic;
@@ -628,13 +627,16 @@
   text-shadow: 0px 0px 1px #000000;
   bottom: 24px;
 }
+.fontChageWrapper.mchat {
+  bottom: 46px;
+}
 .fontChageWrapper .fontDown {
   padding: 4px 10px;
   display: inline-block;
   text-align: center;
   float: left;
   line-height: 20px;
-  background: #9f9f9f;
+  background: #3b3b3b;
   font-size: 25px;
   cursor: pointer;
 }
@@ -643,9 +645,19 @@
   display: inline-block;
   text-align: center;
   float: left;
-  background: #9f9f9f;
+  background: #3b3b3b;
   line-height: 20px;
   font-size: 25px;
+  cursor: pointer;
+}
+.fontChageWrapper .cfont {
+  padding: 4px 10px;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  background: #9f9f9f;
+  line-height: 20px;
+  font-size: 17px;
   cursor: pointer;
 }
 .defaulColor {

@@ -32,11 +32,11 @@ module.exports = function (app) {
 			roomMgr.join(data);
 		});
 
-		socket.on('sendMessage', function (msg, color) {
+		socket.on('sendMessage', function (msg, color, fontSize) {
 			//@todo permit message
 			var data = userMgr.get(socket);
 			if (userMgr.isPerformer(data) || userMgr.isMember(data)) {
-				roomMgr.sendToAll(data, msg, color);
+				roomMgr.sendToAll(data, msg, color, fontSize);
 			}
 		});
 

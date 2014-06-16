@@ -31,11 +31,12 @@ define(['jquery', 'underscore', 'backbone', '../widgets/controlpanelwidget', 'em
 		inputKeyPress: function (event) {
 			if (event.charCode === 13) {
 				var color = {r:0,g:0,b:0};
+				var fontSize = App.widgets.ctrlPanelWidget._view.fontSize;
 				if(App.widgets.ctrlPanelWidget._view.rgba){
-					color = App.widgets.ctrlPanelWidget._view.rgba
+					color = App.widgets.ctrlPanelWidget._view.rgba;
 					console.log("Color:",color);
 				}
-				App.sio.emit('sendMessage', this.$input.val(),color);
+				App.sio.emit('sendMessage', this.$input.val(),color,fontSize);
 				this.$input.val('');
 			}
 		}

@@ -41,8 +41,9 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 				</li>\
 				<li style="position: relative">\
 				<div class="fontChageWrapper" style="display: none">\
-				<div class="fontDown" id="fontUp">-</div>\
-				<div class="fontUp" id="fontDown">+</div>\
+				<div class="fontDown" id="fontDown">-</div>\
+				<div class="fontUp" id="fontUp">+</div>\
+				<div class="cfont" id="cfont"></div>\
 				</div>\
 				<a href="#" id="fontButton">\
 					<span class="sprite sprite-chats_25"></span>\
@@ -60,6 +61,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 		className: 'controlpanel-ui',
 		id: 'controlpanel',
 		template: _.template(_template),
+		fontSize: 14,
 		events: {
 			'click #toolsPanel': 'switchTools',
 			'click #memberAreaButton': 'memberAreaClick',
@@ -122,16 +124,19 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 		},
 		fontButtonClick: function(){
 			if (this.$('.fontChageWrapper').css('display') === 'none') {
+				this.$('.fontChageWrapper').find('#cfont').text(this.fontSize + 'px');
 				this.$('.fontChageWrapper').show();
 			} else {
 				this.$('.fontChageWrapper').hide();
 			}
 		},
 		fontUpClick: function(){
-			this.$('.fontChageWrapper').hide();
+			this.fontSize = this.fontSize < 20 ? this.fontSize+1 : this.fontSize;
+			this.$('.fontChageWrapper').find('#cfont').text(this.fontSize + 'px');
 		},
 		fontDownClick: function(){
-			this.$('.fontChageWrapper').hide();
+			this.fontSize = this.fontSize > 14 ? this.fontSize-1 : this.fontSize;
+			this.$('.fontChageWrapper').find('#cfont').text(this.fontSize + 'px');
 		},
 		smileyClick: function (e) {
 			if (this.$('.emoticons-panell-ui').css('display') === 'none') {
