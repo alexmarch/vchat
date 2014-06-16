@@ -3,7 +3,7 @@ module.exports = {
 	options: {
 		host: 'localhost',
 		port: 8081,
-		path: '/api/auth.php',
+		path: '/chat_api.php',
 		method: 'POST'
 	}
 }
