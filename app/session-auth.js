@@ -18,6 +18,7 @@ exports.auth = function(s, next){
 		 * ///////////////////////////////////////
 		 */
 		var data = querystring.stringify({"function":"auth_client", sessionid:cookies[sidkey]});
+		console.log(data);
 		options["headers"] = {
 			'Content-Type': 'application/x-www-form-urlencoded',
 			'Content-Length': Buffer.byteLength(data)
