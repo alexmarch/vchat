@@ -8,6 +8,7 @@ exports.auth = function(s, next){
 	querystring = require('querystring'),
 	userMgr = require('./users-manager'),
 	roomMgr = require('./rooms-manager'),
+	memcache = require('memcache'),
 	options = require('./config').options,
 	req = null;
 	debug("Auth socket");
@@ -22,7 +23,19 @@ exports.auth = function(s, next){
 		options["headers"] = {
 			'Content-Type': 'application/x-www-form-urlencoded',
 			'Content-Length': Buffer.byteLength(data)
-		}
+		};
+		/*//////////////////////////////////////////
+		* Memcache client connection
+		/////////////////////////////////////////*/
+		var c = memcache.Client(11211, 'localhost');
+		c.connect();
+		c.get('sessions/'+cookies[sidkey],function(err,sess){
+				if(!err && sess){
+					debug(esss);
+				}else{
+					console.log("Session error", err);
+				}
+		});
 		req = http.request(options,function(res){
 			res.setEncoding('utf8');
 			res.on('data',function(chunk){

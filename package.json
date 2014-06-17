@@ -19,6 +19,7 @@
 		"cookie": "*",
 		"querystring": "*",
 		"underscore.string": "*",
-		"escape-html": "~1.0.1"
+		"escape-html": "~1.0.1",
+		"memcache": "~0.3.0"
 	}
 }
