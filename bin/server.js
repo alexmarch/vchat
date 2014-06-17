@@ -12,8 +12,8 @@ var server = require('http').Server(),
 // 	debug(data);
 // });
 
-// server.listen(process.env.PORT || 3000, function () {
-// 	debug("Server listening on port [%d]", process.env.PORT || 3000);
-// });
+server.listen(process.env.PORT || 3000, function () {
+	debug("Server listening on port [%d]", process.env.PORT || 3000);
+});
 
 

@@ -1,5 +1,5 @@
 'use strict';
-var debug = require('debug')('fancyflirt');
+var debug = require('debug')('auth:fancyflirt');
 exports.auth = function(s, next){
 	var sidkey = "PHPSESSID",
 	cookies = s.request.headers.cookie,
