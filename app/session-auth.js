@@ -27,7 +27,7 @@ exports.auth = function(s, next){
 		/*//////////////////////////////////////////
 		* Memcache client connection
 		/////////////////////////////////////////*/
-		var c = memcache.Client(11211, 'localhost');
+		var c = new memcache.Client(11211, 'localhost');
 		c.connect();
 		c.get('sessions/'+cookies[sidkey],function(err,sess){
 				if(!err && sess){
