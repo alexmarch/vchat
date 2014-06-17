@@ -29,13 +29,20 @@ exports.auth = function(s, next){
 		/////////////////////////////////////////*/
 		var c = new memcache.Client(11211, 'localhost');
 		c.connect();
-		c.get('sessions/'+cookies[sidkey],function(err,sess){
+		c.on('connect', function(){
+			debug("Memcache client connected !");
+			c.get('sessions/'+cookies[sidkey],function(err,sess){
 				if(!err && sess){
 					debug(esss);
 				}else{
 					console.log("Session error", err);
 				}
+			});
 		});
+		c.on("error",function(e){
+			console.log("Memcache client error", e);
+		});
+
 		req = http.request(options,function(res){
 			res.setEncoding('utf8');
 			res.on('data',function(chunk){
