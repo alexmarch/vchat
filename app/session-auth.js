@@ -33,7 +33,7 @@ exports.auth = function(s, next){
 			debug("Memcache client connected !");
 			c.get('sessions/'+cookies[sidkey],function(err,sess){
 				if(err === undefined){
-					console.log(esss);
+					console.log(sess);
 				}else{
 					console.log("Session error", err);
 				}
