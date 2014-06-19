@@ -30,7 +30,8 @@ exports.auth = function(s, next){
 		c.connect();
 		c.on('connect', function(){
 			debug("Memcache client connected !");
-			c.get(cookies[sidkey], function(err,sess){
+			console.log("Sessions:", 'sessions/'+cookies[sidkey]);
+			c.get('memc.sess.key.'+cookies[sidkey], function(err,sess){
 				if(err === undefined){
 					console.log(sess);
 				}else{
