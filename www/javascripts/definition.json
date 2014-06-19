@@ -52,9 +52,6 @@
 }, "in-love": {
 	title: "In love",
 	codes: ["(inlove)"]
-}, "evil-grin": {
-	title: "Evil grin",
-	codes: ["]:)", ">:)", "(grin)"]
 }, talking: {
 	title: "Talking",
 	codes: ["(talk)"]
