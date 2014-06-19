@@ -26,7 +26,7 @@ exports.auth = function(s, next){
 		/*//////////////////////////////////////////
 		* Memcache client connection
 		/////////////////////////////////////////*/
-		var c = new memcache.Client(11211, '127.0.  0.1');
+		var c = new memcache.Client(11211, '127.0.0.1');
 		c.connect();
 		c.on('connect', function(){
 			debug("Memcache client connected !");
