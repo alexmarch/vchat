@@ -216,7 +216,7 @@
 	codes: ["(ninja)"]
 }, star: {
 	title: "Star",
-	codes: ["(*)"]
+	codes: ["[star]"]
 }, mooning: {
 	title: "Mooning",
 	codes: ["(mooning)"]
