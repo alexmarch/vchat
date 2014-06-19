@@ -2,7 +2,6 @@
 var debug = require('debug')('auth:fancyflirt');
 exports.auth = function(s, next){
 	var sidkey = "PHPSESSID",
-	cookies = s.request.headers.cookie,
 	cookie = require('cookie'),
 	http = require('http'),
 	querystring = require('querystring'),
@@ -10,6 +9,7 @@ exports.auth = function(s, next){
 	roomMgr = require('./rooms-manager'),
 	memcache = require('memcache'),
 	options = require('./config').options,
+	var cookies = s.request.headers.cookie,
 	cookies = cookie.parse(cookies);
 
 	if(cookies[sidkey]){
@@ -76,5 +76,6 @@ exports.auth = function(s, next){
 		req.write(data);
 		req.end();
 	}
+}
 
 }
