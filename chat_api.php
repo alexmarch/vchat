@@ -28,8 +28,7 @@ if(isset($_POST["function"]) && isset($_POST["sessionid"])) {
 
 }
 
-function auth_client()
-{
+function auth_client(){
 	echo json_encode($_SESSION);
 	return true;
 	$user_id = $_SESSION['userid'];
@@ -56,8 +55,7 @@ function auth_client()
 	}
 }
 
-function update_user_credits($credits)
-{
+function update_user_credits($credits){
 	if(!is_null($credits)) {
 		$user_id = $_SESSION['userid'];
 		$query = "UPDATE `users` SET `chips`=$credits WHERE `id`=$user_id";
@@ -74,8 +72,7 @@ function update_user_credits($credits)
 	}
 }
 
-function get_user_credits()
-{
+function get_user_credits(){
 	if($_SESSION["usertype"] == "users") {
 		$user_id = $_SESSION['userid'];
 		$query = "SELECT `chips` FROM `users` WHERE `id`=$user_id";
@@ -93,8 +90,7 @@ function get_user_credits()
 	}
 }
 
-function update_performer_state($state)
-{
+function update_performer_state($state){
 	if($_SESSION["usertype"] == "performers") {
 		if(!is_null($state)) {
 			$user_id = $_SESSION["userid"];
@@ -116,8 +112,7 @@ function update_performer_state($state)
 	}
 }
 
-function init_db_connect()
-{
+function init_db_connect(){
 	mysql_pconnect(HOST, USER, PASSWORD); // create connection
 	mysql_select_db(DBNAME); // use db
 	mysql_set_charset('utf8'); // chage charset

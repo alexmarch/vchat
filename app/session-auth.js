@@ -14,10 +14,9 @@ exports.auth = function(s, next){
 	debug("Auth socket");
 	cookies = cookie.parse(cookies);
 	if(cookies[sidkey]){
-		/** ///////////////////////////////////////
+		/*///////////////////////////////////////
 		 * Authentication user with session id
-		 * ///////////////////////////////////////
-		 */
+		//////////////////////////////////////*/
 		var data = querystring.stringify({"function":"auth_client", sessionid:cookies[sidkey]});
 		console.log(data);
 		options["headers"] = {
@@ -27,11 +26,11 @@ exports.auth = function(s, next){
 		/*//////////////////////////////////////////
 		* Memcache client connection
 		/////////////////////////////////////////*/
-		var c = new memcache.Client(11211, '127.0.0.1');
+		var c = new memcache.Client(11211, '127.0.  0.1');
 		c.connect();
 		c.on('connect', function(){
 			debug("Memcache client connected !");
-			c.get('sessions/'+cookies[sidkey], function(err,sess){
+			c.get(cookies[sidkey], function(err,sess){
 				if(err === undefined){
 					console.log(sess);
 				}else{
