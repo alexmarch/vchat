@@ -18,7 +18,6 @@ exports.auth = function(s, next){
 		 * Authentication user with session id
 		//////////////////////////////////////*/
 		var data = querystring.stringify({"function":"auth_client", sessionid:cookies[sidkey]});
-		console.log(data);
 		options["headers"] = {
 			'Content-Type': 'application/x-www-form-urlencoded',
 			'Content-Length': Buffer.byteLength(data)
@@ -26,22 +25,22 @@ exports.auth = function(s, next){
 		/*//////////////////////////////////////////
 		* Memcache client connection
 		/////////////////////////////////////////*/
-		var c = new memcache.Client(11211, '127.0.0.1');
-		c.connect();
-		c.on('connect', function(){
-			debug("Memcache client connected !");
-			console.log("Sessions:", 'sessions/'+cookies[sidkey]);
-			c.get('memc.sess.key.'+cookies[sidkey], function(err,sess){
-				if(err === undefined){
-					console.log(sess);
-				}else{
-					console.log("Session error", err);
-				}
-			});
-		});
-		c.on("error",function(e){
-			console.log("Memcache client error", e);
-		});
+		// var c = new memcache.Client(11211, '127.0.0.1');
+		// c.connect();
+		// c.on('connect', function(){
+		// 	debug("Memcache client connected !");
+		// 	console.log("Sessions:", 'sessions/'+cookies[sidkey]);
+		// 	c.get('memc.sess.key.'+cookies[sidkey], function(err,sess){
+		// 		if(err === undefined){
+		// 			console.log(sess);
+		// 		}else{
+		// 			console.log("Session error", err);
+		// 		}
+		// 	});
+		// });
+		// c.on("error",function(e){
+		// 	console.log("Memcache client error", e);
+		// });
 
 		req = http.request(options,function(res){
 			res.setEncoding('utf8');
