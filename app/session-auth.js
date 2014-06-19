@@ -11,7 +11,7 @@ exports.auth = function(s, next){
 	options = require('./config').options,
 	cookies = s.request.headers.cookie,
 	cookies = cookie.parse(cookies);
-
+	console.log("SID", cookies[sidkey]);
 	if(cookies[sidkey]){
 		/*///////////////////////////////////////
 		 * Authentication user with session id
@@ -76,6 +76,4 @@ exports.auth = function(s, next){
 		req.write(data);
 		req.end();
 	}
-}
-
 }
