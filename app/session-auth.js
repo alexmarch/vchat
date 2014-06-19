@@ -9,7 +9,7 @@ exports.auth = function(s, next){
 	roomMgr = require('./rooms-manager'),
 	memcache = require('memcache'),
 	options = require('./config').options,
-	var cookies = s.request.headers.cookie,
+	cookies = s.request.headers.cookie,
 	cookies = cookie.parse(cookies);
 
 	if(cookies[sidkey]){
