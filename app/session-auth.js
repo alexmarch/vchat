@@ -45,9 +45,7 @@ exports.auth = function(s, next){
 			res.setEncoding('utf8');
 			res.on('data',function(chunk){
 				try{
-					debug(chunk);
 					var data = JSON.parse(chunk);
-					debug("Authentication -->");
 					if(data['utype'] !== undefined){
 						if(userMgr.isPerformer(data) && roomMgr.inRoom(data) === false){
 							debug("Performer authentication");

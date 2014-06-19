@@ -54,6 +54,7 @@ define(['jquery', 'underscore', 'backbone', 'widgets/mchat/controlpanelwidget','
 	});
 	$(function(){
 		var definition = eval('('+defs+')');
+		console.log(definition);
 		$.emoticons.define(definition);
 	});
 	var ChatAreaController = function () {
