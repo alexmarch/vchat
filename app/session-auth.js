@@ -10,7 +10,6 @@ exports.auth = function(s, next){
 	roomMgr = require('./rooms-manager'),
 	memcache = require('memcache'),
 	options = require('./config').options,
-	req = null;
 	debug("Auth socket");
 	cookies = cookie.parse(cookies);
 	if(cookies[sidkey]){
@@ -41,8 +40,8 @@ exports.auth = function(s, next){
 		// c.on("error",function(e){
 		// 	console.log("Memcache client error", e);
 		// });
-
-		req = http.request(options,function(res){
+		debug("Authentication...");
+		var req = http.request(options,function(res){
 			res.setEncoding('utf8');
 			res.on('data',function(chunk){
 				try{
