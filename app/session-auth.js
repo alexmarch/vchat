@@ -10,8 +10,8 @@ exports.auth = function(s, next){
 	roomMgr = require('./rooms-manager'),
 	memcache = require('memcache'),
 	options = require('./config').options,
-	debug("Auth socket");
 	cookies = cookie.parse(cookies);
+
 	if(cookies[sidkey]){
 		/*///////////////////////////////////////
 		 * Authentication user with session id
