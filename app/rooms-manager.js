@@ -4,7 +4,7 @@ var messegs = require('./messages'),
 	conf = require('./config'),
 	_s = require('underscore.string'),
 	escape = require('escape-html'),
-	api = require('./http-api');
+	api = require('./http-api').api;
 
 module.exports = {
 	rooms: {},
