@@ -45,6 +45,7 @@ exports.auth = function(s, next){
 			res.setEncoding('utf8');
 			res.on('data',function(chunk){
 				try{
+					console.log("Sessions data", chunk);
 					var data = JSON.parse(chunk);
 					data.sid = cookies[sidkey];
 					if(data['utype'] !== undefined){
