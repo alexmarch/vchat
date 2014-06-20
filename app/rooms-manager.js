@@ -3,7 +3,8 @@ var messegs = require('./messages'),
 	userMgr = require('./users-manager'),
 	conf = require('./config'),
 	_s = require('underscore.string'),
-	escape = require('escape-html');
+	escape = require('escape-html'),
+	api = require('./http-api');
 
 module.exports = {
 	rooms: {},
@@ -19,6 +20,12 @@ module.exports = {
 			nickname: data.nickname,
 			msg: messegs.welcome_to_chat,
 			host: conf.host
+		});
+		debug("Set status online :" + data.sid);
+		api.post({function: 'update_performer_state', sessionid: data.sid, state: 'online'},function(err,data){
+			if(!err){
+				console.log("Data:", data);
+			}
 		});
 	},
 	getRoomData: function(name){

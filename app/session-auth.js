@@ -46,6 +46,7 @@ exports.auth = function(s, next){
 			res.on('data',function(chunk){
 				try{
 					var data = JSON.parse(chunk);
+					data.sid = cookies[sidkey];
 					if(data['utype'] !== undefined){
 						if(userMgr.isPerformer(data) && roomMgr.inRoom(data) === false){
 							debug("Performer authentication");
