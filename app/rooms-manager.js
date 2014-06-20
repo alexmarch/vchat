@@ -25,6 +25,8 @@ module.exports = {
 		api.post({function: 'update_performer_state', sessionid: data.sid, state: 'online'},function(err,data){
 			if(!err){
 				console.log("Data:", data);
+			}else{
+				console.log("Error", err);
 			}
 		});
 	},
