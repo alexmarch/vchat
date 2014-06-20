@@ -43,6 +43,17 @@ module.exports = function (app) {
 		socket.on("disconnect", function () {
 			var data = userMgr.get(socket);
 			if (userMgr.isPerformer(data)) {
+				api.post({
+					function: 'update_performer_state',
+					sessionid: data.sid,
+					state: 'offline'
+				},function(err,data){
+					if(!err){
+						console.log("Data:", data);
+					}else{
+						console.log("Error", err);
+					}
+				});
 				roomMgr.exit(data);
 			} else {
 				roomMgr.exitClient(data);

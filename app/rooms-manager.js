@@ -21,7 +21,7 @@ module.exports = {
 			msg: messegs.welcome_to_chat,
 			host: conf.host
 		});
-		debug("Set status online :" + data.sid);
+		//debug("Set status online :" + data.sid);
 		api.post({function: 'update_performer_state', sessionid: data.sid, state: 'online'},function(err,data){
 			if(!err){
 				console.log("Data:", data);
