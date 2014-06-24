@@ -1,4 +1,4 @@
-require.config({
+requirejs.config({
 	paths: {
 		"backbone": "/chat-app/www/bower_components/backbone/backbone",
 		"jquery": "/chat-app/www/bower_components/jquery/dist/jquery.min",
@@ -34,6 +34,6 @@ require.config({
 		}
 	}
 });
-require(['mchat-app'], function (App) {
+define(['mchat-app'], function (App) {
 	$('#chatapp').html(App.views.ChatContent.render().$el);
 });
