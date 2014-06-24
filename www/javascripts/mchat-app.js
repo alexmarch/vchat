@@ -39,7 +39,7 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function
 		App.sio.on('receiveNewMsg', function (msg,color) {
 			var $msg = $(msg);
 			$msg.find('#msg').css({'color':color});
-			App.widgets.ChatArea.addToChat('<p>'+$msg.html()+'</p>');
+			App.widgets.ChatArea.addToChat('<p style="text-align: left">'+$msg.html()+'</p>');
 		});
 		App.sio.on('memberarea', function(data){
 			vplayer.memberarea();
