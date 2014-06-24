@@ -34,6 +34,6 @@ require.config({
 		}
 	}
 });
-require([], function (App) {
+define(['mchat-app'], function (App) {
 	//$('#chatapp').html(App.views.ChatContent.render().$el);
 });
