@@ -1,6 +1,6 @@
 define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 	var _template = '<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="650" height="352" id="VPlay" align="middle">\
-		<param name="movie" value="assets/src/VPlay.swf" />\
+		<param name="movie" value="chat-app/www/assets/src/VPlay.swf" />\
 		<param name="quality" value="high" />\
 		<param name="bgcolor" value="#000000" />\
 		<param name="play" value="true" />\
@@ -12,8 +12,8 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		<param name="salign" value="" />\
 		<param name="allowScriptAccess" value="sameDomain" />\
 		<!--[if !IE]>-->\
-		<object type="application/x-shockwave-flash" id="VPlay" data="assets/src/VPlay.swf" width="650" height="352">\
-			<param name="movie" value="assets/src/VPlay.swf" />\
+		<object type="application/x-shockwave-flash" id="VPlay" data="chat-app/www/assets/src/VPlay.swf" width="650" height="352">\
+			<param name="movie" value="chat-app/www/assets/src/VPlay.swf" />\
 			<param name="quality" value="high" />\
 			<param name="bgcolor" value="#000000" />\
 			<param name="play" value="true" />\
