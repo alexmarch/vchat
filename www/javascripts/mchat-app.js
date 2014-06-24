@@ -93,7 +93,7 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function
 	};
 
 	App.connect = function () {
-		this.sio = io.connect('http://localhost:3000');
+		this.sio = io.connect('http://fancyflirt.com:3000');
 		this.bindevents();
 	};
 
