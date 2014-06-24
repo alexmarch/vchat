@@ -34,6 +34,6 @@ require.config({
 	}
 	}
 });
-require(['pchat-app'], function (App) {
-	$('#chatapp').html(App.views.ChatContent.render().$el);
-});
+// require(['pchat-app'], function (App) {
+// 	$('#chatapp').html(App.views.ChatContent.render().$el);
+// });
