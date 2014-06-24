@@ -1,4 +1,4 @@
-require.config({
+requirejs.config({
 	paths: {
 		"backbone": "/chat-app/www/bower_components/backbone/backbone",
 		"jquery": "/chat-app/www/bower_components/jquery/dist/jquery.min",
