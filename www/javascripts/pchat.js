@@ -1,4 +1,4 @@
-requirejs.config({
+require.config({
 	paths: {
 		"backbone": "/bower_components/backbone/backbone",
 		"jquery": "/bower_components/jquery/dist/jquery.min",
@@ -34,6 +34,6 @@ requirejs.config({
 	}
 	}
 });
-define(['pchat-app'], function (App) {
+require(['pchat-app'], function (App) {
 	$('#chatapp').html(App.views.ChatContent.render().$el);
 });
