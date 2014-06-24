@@ -1,5 +1,5 @@
 module.exports = {
-	host: 'rtmp://127.0.0.1/videochat',
+	host: 'rtmp://fancyflirt.com/videochat',
 	options: {
 		host: 'fancyflirt.com',
 		port: 80,
