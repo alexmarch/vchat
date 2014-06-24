@@ -36,5 +36,5 @@ requirejs.config({
 });
 define(function(require){
 	var app = require('mchat-app');
-	$('#chatapp').html(app.views.ChatContent.render().$el);
+	jQuery('#chatapp').html(app.views.ChatContent.render().$el);
 });
