@@ -33,7 +33,6 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			<!--[if !IE]>-->\
 		</object>\
 		<!--<![endif]-->\
-
 		</object>';
 	var PlayerView = Backbone.View.extend({
 		className: "playerwidget",
