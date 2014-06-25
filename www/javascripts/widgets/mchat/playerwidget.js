@@ -33,7 +33,6 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			<!--[if !IE]>-->\
 		</object>\
 		<!--<![endif]-->\
-		<embed src="chat-app/www/assets/src/VPlay.swf" allowFullScreen="true" bgcolor="#000000" width="600" height="400" name="VPlay" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />\
 		</object>';
 	var PlayerView = Backbone.View.extend({
 		className: "playerwidget",
