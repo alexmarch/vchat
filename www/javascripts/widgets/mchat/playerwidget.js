@@ -93,6 +93,10 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			} catch (e) {
 				//catch exception
 			}
+		};
+
+		this.fullScreen = function(){
+			this.swf.fullscreen();
 		}
 
 		this.init = function () {

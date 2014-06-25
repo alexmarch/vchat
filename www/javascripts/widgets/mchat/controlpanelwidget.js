@@ -56,7 +56,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 						<a class="icon icon-sound"></a>\
 					</li>\
 					<li class="nav-item">\
-						<a class="icon icon-fullsize"></a>\
+						<a class="icon icon-fullsize" id="fullsizeButton"></a>\
 					</li>\
 				</ul>\
 				</li>\
@@ -78,7 +78,8 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 			'click .defaulColor': 'defaultColorClick',
 			'click #fontButton': 'fontButtonClick',
 			'click #fontUp': "fontUpClick",
-			'click #fontDown': "fontDownClick"
+			'click #fontDown': "fontDownClick",
+			'click #fullsizeButton': 'fullsizeClick'
 		},
 
 		initialize: function () {
@@ -175,6 +176,10 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 			if (e.keyCode == 13) {
 				this.setTopicButtonClick();
 			}
+		},
+		fullsizeClick: function () {
+			/*Enable fullscreen*/
+			vplayer.fullscreen();
 		}
 	});
 
