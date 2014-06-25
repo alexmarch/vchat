@@ -56,7 +56,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 						<a class="icon icon-sound"></a>\
 					</li>\
 					<li class="nav-item">\
-						<a class="icon icon-fullsize" id="fullsizeButton"></a>\
+						<!-- <a class="icon icon-fullsize" id="fullsizeButton"></a> -->\
 					</li>\
 				</ul>\
 				</li>\
