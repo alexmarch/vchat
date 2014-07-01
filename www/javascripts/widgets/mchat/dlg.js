@@ -33,7 +33,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		},
 
 		startPrivate: function(){
-			console.log('startPrivate');
+			this.closeDlg();
 			if(this.opt.onstart && "function" === typeof this.opt.onstart){
 				this.opt.onstart();
 			}
