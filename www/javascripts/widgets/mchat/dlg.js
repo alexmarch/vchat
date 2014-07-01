@@ -13,7 +13,6 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 
 		events:{
 			'click .close-dlg': 'closeDlg',
-			'click #startPrivate': 'startPrivate'
 		},
 
 		initialize: function(options){
