@@ -101,6 +101,11 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 
 		this.fullscreen = function(){
 			this.swf.fullscreen();
+		};
+
+		//Transmit msg from js to flash
+		this.recMsg = function(msg){
+			this.swf.recMsg(msg);
 		}
 
 		this.init = function () {
