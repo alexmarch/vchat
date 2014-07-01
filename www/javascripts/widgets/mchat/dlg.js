@@ -10,13 +10,13 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		},
 		template: _.template(template),
 		initialize: function(options){
-			this.options = {};
-			_.extend(this.options,options);
+			this.options = options;
 			this.render();
 			return this;
 		},
 		render: function(){
 			this.$el.html(this.template({caption: this.options.caption, text: this.options.text}));
+			this.bindevents();
 		},
 		closeDlg: function(){
 			this.$el.css({"display":"none"});
