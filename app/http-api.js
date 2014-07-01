@@ -17,6 +17,7 @@ exports.api = {
 			res.setEncoding('utf8');
 			res.on('data',function(chunk){
 				try{
+					debug(chunk);
 					var data = JSON.parse(chunk);
 					cb(null,data);
 				}catch(ex){
