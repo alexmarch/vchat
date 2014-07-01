@@ -790,6 +790,8 @@
   color: #FFFFFF;
   font-size: 17px;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
 }
 .mchat-navbar {
   list-style: none;
