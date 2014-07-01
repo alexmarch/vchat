@@ -96,6 +96,7 @@ define(['jquery', 'underscore', 'backbone', 'widgets/mchat/controlpanelwidget','
 						App.sio.emit('start_private');
 					}
 				});
+				this.ChatArea.$('#dialogs').html(dlg.$el);
 			},
 			this.showPremiumDlg = function(){
 				var dlg = new Dlg({
@@ -106,7 +107,7 @@ define(['jquery', 'underscore', 'backbone', 'widgets/mchat/controlpanelwidget','
 					}
 				});
 				console.log(dlg,dlg.$el);
-				this.ChatArea.$el('#dialogs').html(dlg.$el);
+				this.ChatArea.$('#dialogs').html(dlg.$el);
 			}
 	};
 	return ChatAreaController;
