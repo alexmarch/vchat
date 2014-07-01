@@ -5,7 +5,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		<param name="bgcolor" value="#000000" />\
 		<param name="play" value="true" />\
 		<param name="loop" value="true" />\
-		<param name="wmode" value="window" />\
+		<param name="wmode" value="direct" />\
 		<param name="scale" value="showall" />\
 		<param name="menu" value="true" />\
 		<param name="devicefont" value="false" />\
@@ -18,7 +18,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			<param name="bgcolor" value="#000000" />\
 			<param name="play" value="true" />\
 			<param name="loop" value="true" />\
-			<param name="wmode" value="window" />\
+			<param name="wmode" value="direct" />\
 			<param name="scale" value="showall" />\
 			<param name="menu" value="true" />\
 			<param name="devicefont" value="false" />\
