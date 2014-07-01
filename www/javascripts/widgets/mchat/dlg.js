@@ -12,11 +12,11 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 
 		initialize: function(options){
 			this.opt = options;
-			return this;
 		},
 
 		render: function(){
 			this.$el.html(this.template({caption: this.opt.caption, text: this.opt.text}));
+			return this;
 		},
 
 		closeDlg: function(){
