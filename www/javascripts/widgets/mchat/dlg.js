@@ -4,11 +4,14 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		'<div class="dlg-footer"><button class="button-start">START</button></div>' +
 		'</div></div>';
 	var Dlg = Backbone.View.extend({
+
+		template: _.template(_template),
+
 		events:{
-			'click .closeDlg': 'closeDlg',
+			'click .close-dlg': 'closeDlg',
 			'click .button-start': 'startButton'
 		},
-		template: _.template(_template),
+
 
 		initialize: function(options){
 			this.opt = options;
