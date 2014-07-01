@@ -104,7 +104,7 @@ module.exports = function (app) {
 			var roomData = roomMgr.getRoomData(userData.room);
 			var modelData = userMgr.get(roomData.socket);
 			if (userMgr.isMember(userData) && !modelData['premium']) {
-				api.post({path: '/api/get-credits.php', uid: userData.uid}, function (err, data) {
+				api.post({path: '/chat_api.php', 'function':'get_user_credit', sessionid: userData.sid}, function (err, data) {
 					if (!err) {
 						if(parseFloat(roomData.private_cost) <= parseFloat(data.credits)){
 							if(pvtMgr.notInPrivate(userData.room,userData.uid)){
