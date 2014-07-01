@@ -13,6 +13,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			this.options = {};
 			_.extend(this.options,options);
 			this.render();
+			return this;
 		},
 		render: function(){
 			this.$el.html(this.template({caption: this.options.title, text: this.options.text}));

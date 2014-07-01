@@ -105,6 +105,7 @@ define(['jquery', 'underscore', 'backbone', 'widgets/mchat/controlpanelwidget','
 						App.sio.emit('start_premium_private');
 					}
 				});
+				console.log(dlg,dlg.$el);
 				this.$el('#dialogs').html(dlg.$el);
 			}
 	};
