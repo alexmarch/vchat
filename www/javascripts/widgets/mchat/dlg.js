@@ -16,7 +16,6 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		},
 		render: function(){
 			this.$el.html(this.template({caption: this.options.caption, text: this.options.text}));
-			this.bindevents();
 		},
 		closeDlg: function(){
 			this.$el.css({"display":"none"});
