@@ -1,13 +1,13 @@
 require.config({
 	paths: {
-		"backbone": "/bower_components/backbone/backbone",
-		"jquery": "/bower_components/jquery/dist/jquery.min",
-		"underscore": "/bower_components/underscore/underscore",
-		"jscrollpane": "/javascripts/libs/jscrollpane/jquery.jscrollpane",
-		"mousewheel": "/javascripts/libs/jscrollpane/jquery.mousewheel",
-		"emoticons": "/bower_components/emoticons/lib/emoticons",
-		"tinycolor": "/javascripts/libs/tinycolor",
-		"colorpicker": "/javascripts/libs/jquery-colorpickersliders/jquery.colorpickersliders",
+		"backbone": "/chat-app/www/bower_components/backbone/backbone",
+		"jquery": "/chat-app/www/bower_components/jquery/dist/jquery.min",
+		"underscore": "/chat-app/www/bower_components/underscore/underscore",
+		"jscrollpane": "/chat-app/www/javascripts/libs/jscrollpane/jquery.jscrollpane",
+		"mousewheel": "/chat-app/www/javascripts/libs/jscrollpane/jquery.mousewheel",
+		"emoticons": "/chat-app/www/bower_components/emoticons/lib/emoticons",
+		"tinycolor": "/chat-app/www/javascripts/libs/tinycolor",
+		"colorpicker": "/chat-app/www/javascripts/libs/jquery-colorpickersliders/jquery.colorpickersliders",
 	shim: {
 		"backbone": {
 			deps: ["underscore","jquery"],
