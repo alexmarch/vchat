@@ -106,7 +106,7 @@ define(['jquery', 'underscore', 'backbone', 'widgets/mchat/controlpanelwidget','
 					}
 				});
 				console.log(dlg,dlg.$el);
-				this.$el('#dialogs').html(dlg.$el);
+				this.ChatArea.$el('#dialogs').html(dlg.$el);
 			}
 	};
 	return ChatAreaController;
