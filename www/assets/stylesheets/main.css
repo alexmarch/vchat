@@ -769,9 +769,27 @@
   background: #b51708;
   padding: 5px;
   position: absolute;
-  left: 50%;
+  right: 50%;
   min-width: 300px;
-  margin-right: -250px;
+  margin-right: -150px;
+  top: 100px;
+}
+.dlg-wrapper .dlg-top {
+  height: 25px;
+}
+.dlg-wrapper .closeDlg {
+  float: right;
+  display: block;
+  padding: 4px;
+  cursor: pointer;
+}
+.dlg-wrapper .button-start {
+  padding: 8px;
+  background: #550606;
+  border: 1px solid #CF3636;
+  color: #FFFFFF;
+  font-size: 17px;
+  cursor: pointer;
 }
 .mchat-navbar {
   list-style: none;
