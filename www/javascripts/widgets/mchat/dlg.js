@@ -4,7 +4,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		'<div class="dlg-content">' +
 			'<div class="dlg-caption"><%= caption%></div>' +
 		'<div class="dlg-text"><%= text%></div>' +
-		'<div class="dlg-footer"><a href="#" class="button-start">START</a></div>' +
+		'<div class="dlg-footer"><a href="#" id="startPrivate" class="button-start">START</a></div>' +
 		'</div>' +
 		'</div>';
 	var Dlg = Backbone.View.extend({
@@ -13,7 +13,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 
 		events:{
 			'click .close-dlg': 'closeDlg',
-			'click .button-start': 'startButton'
+			'click #startPrivate': 'startPrivate'
 		},
 
 		initialize: function(options){
@@ -30,12 +30,10 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			this.$el.css({"display":"none"});
 		},
 
-		startButton: function(){
-			console.log('stratButton');
-			if(this.opt.onstart && "function" === typeof this.opt.onstart){
-				this.opt.onstart();
-			}
+		startPrivate: function(){
+			console.log('startPrivate');
 		}
+
 	});
 	return Dlg;
 });
