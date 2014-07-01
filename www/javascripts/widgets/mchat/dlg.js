@@ -9,14 +9,16 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			'click .button-start': 'startButton'
 		},
 		template: _.template(template),
+
 		initialize: function(options){
 			this.opt = options;
-			this.render();
 			return this;
 		},
+
 		render: function(){
 			this.$el.html(this.template({caption: this.opt.caption, text: this.opt.text}));
 		},
+
 		closeDlg: function(){
 			console.log("close");
 			this.$el.css({"display":"none"});
