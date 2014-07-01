@@ -4,7 +4,9 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		'<div class="dlg-content">' +
 			'<div class="dlg-caption"><%= caption%></div>' +
 		'<div class="dlg-text"><%= text%></div>' +
-		'<div class="dlg-footer"><a href="#" id="startPrivate" class="button-start">START</a></div>' +
+		'<div class="dlg-footer" style="margin-top: 26px;">' +
+			'<a href="#" id="startPrivate" class="button-start">START</a>' +
+		'</div>' +
 		'</div>' +
 		'</div>';
 	var Dlg = Backbone.View.extend({
