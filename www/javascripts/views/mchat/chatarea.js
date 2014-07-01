@@ -89,25 +89,24 @@ define(['jquery', 'underscore', 'backbone', 'widgets/mchat/controlpanelwidget','
 				this.ChatArea.$input.focus();
 			},
 			this.showPrivateDlg = function(){
-				var dlg = new Dlg({
+				App.widgets.Dlg = new Dlg({
 					caption: "Private chat",
 					text: "Start private chat " +App.data.private_cost + "credits",
 					onstart: function(){
 						App.sio.emit('start_private');
 					}
 				});
-				this.ChatArea.$('#dialogs').html(dlg.$el);
+				this.ChatArea.$('#dialogs').html(App.widgets.Dlg.$el);
 			},
 			this.showPremiumDlg = function(){
-				var dlg = new Dlg({
+				App.widgets.Dlg = new Dlg({
 					caption: "Premium private chat",
 					text: "Start premium private chat " +App.data.private_cost + "credits",
 					onstart: function(){
 						App.sio.emit('start_premium_private');
 					}
 				});
-				console.log(dlg,dlg.$el);
-				this.ChatArea.$('#dialogs').html(dlg.$el);
+				this.ChatArea.$('#dialogs').html(App.widgets.Dlg.$el);
 			}
 	};
 	return ChatAreaController;
