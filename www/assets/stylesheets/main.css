@@ -765,6 +765,14 @@
   letter-spacing: 0px;
   line-height: 16px;
 }
+.dlg-wrapper {
+  background: #b51708;
+  padding: 5px;
+  position: absolute;
+  left: 50%;
+  min-width: 300px;
+  margin-right: -250px;
+}
 .mchat-navbar {
   list-style: none;
   margin: 5px 0px 0px 50px;

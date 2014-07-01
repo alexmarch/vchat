@@ -48,11 +48,11 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatarea',
 			return this;
 		},
 		premiumClickHandler: function(){
-			App.views.ChatArea.showPremiumDlg();
+			App.widgets.ChatArea.showPremiumDlg();
 			//App.sio.emit('start_premium_private');
 		},
 		privateClickHandler: function(){
-			App.views.ChatArea.showPrivateDlg();
+			App.widgets.ChatArea.showPrivateDlg();
 			//App.sio.emit('start_private');
 		}
 	});
