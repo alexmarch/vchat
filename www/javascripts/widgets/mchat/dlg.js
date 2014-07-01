@@ -10,12 +10,12 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		},
 		template: _.template(template),
 		initialize: function(options){
-			this.options = options;
+			this.opt = options;
 			this.render();
 			return this;
 		},
 		render: function(){
-			this.$el.html(this.template({caption: this.options.caption, text: this.options.text}));
+			this.$el.html(this.template({caption: this.opt.caption, text: this.opt.text}));
 		},
 		closeDlg: function(){
 			console.log("close");
@@ -24,8 +24,8 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		startButton: function(){
 			this.closeDlg();
 			console.log('stratButton');
-			if(this.options.onstart && "function" === typeof this.options.onstart){
-				this.options.onstart();
+			if(this.opt.onstart && "function" === typeof this.opt.onstart){
+				this.opt.onstart();
 			}
 		}
 	});
