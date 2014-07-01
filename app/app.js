@@ -33,7 +33,6 @@ module.exports = function (app) {
 		});
 
 		socket.on('sendMessage', function (msg, color, fontSize) {
-			//@todo permit message
 			var data = userMgr.get(socket);
 			if (userMgr.isPerformer(data) || userMgr.isMember(data)) {
 				roomMgr.sendToAll(data, msg, color, fontSize);
@@ -96,7 +95,6 @@ module.exports = function (app) {
 				socket.broadcast.to(roomMgr.getRoom(data)).emit("topic_change", newTopic);
 			}
 		});
-
 		/** ////////////////////////////////
 		 * 	Private chat callbacks
 		 * 	///////////////////////////////
@@ -122,6 +120,8 @@ module.exports = function (app) {
 									socket: userData.socket
 								});
 							}
+						}else{
+							socket.emit('buy_credits'); //Show member dialog for buy credits
 						}
 					} else {
 						socket.emit('start_private_error');

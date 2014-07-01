@@ -50,18 +50,27 @@ module.exports = {
 	join: function (data) {
 		var name = data.room
 		if (this.rooms[name]) {
-			data.socket.join(name);
-			var sdata = userMgr.get(this.rooms[name].socket);
+			data.socket.join(name); // Join member the room
+
+			var sdata = userMgr.get(this.rooms[name].socket); //Get performer data
+
+			//Send performer data to new member
 			data.socket.emit('join_successful', {
 				type: sdata.type,
 				nickname: sdata.nickname,
 				topic: sdata.topic,
 				host: conf.host,
+				private_cost: sdata.private_cost,
+				premium_cost: sdata.premium_cost,
+				voyeur_cost: sdata.voyeur_cost,
 				sname: sdata.type === 'free' ? sdata.sname : undefined
 			});
+
 			//if(sdata.type === "free"){
 			//data.socket.emit('play',{sname: sdata.sname});
 			//}
+
+			//Create new client and add to list
 			var client = {
 				uid: data.uid,
 				id: data.socket.id,
@@ -71,6 +80,7 @@ module.exports = {
 			}
 			this.rooms[name].clients[client.id] = client;
 			this.rooms[name].socket.emit('reset_users_list',this.rooms[name].clients);
+
 		} else {
 			data.socket.emit('join_room_error');
 		}

@@ -6,7 +6,8 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function
 		views: {},
 		models: {},
 		widgets: {},
-		sio: {}
+		sio: {},
+		data: {}
 	};
 	App.bindevents = function () {
 		App.sio.on('welcome_to_chat_room', function (data) {
@@ -27,7 +28,8 @@ define(['jquery', 'underscore', 'backbone', 'views/mchat/chatcontent'], function
 		});
 		App.sio.on('join_successful',function(data){
 			vplayer.connect(data);
-			console.log("Data:",data);
+			console.log("join successful: ",data);
+			App.data = data;
 			App.widgets.ctrlPanelWidget.setUserName(data.nickname);
 			if(data.topic){
 				App.widgets.ChatArea.addToChat(data.topic);

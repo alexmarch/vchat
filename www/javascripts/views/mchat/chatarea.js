@@ -1,8 +1,9 @@
 'use strict';
 
-define(['jquery', 'underscore', 'backbone', 'widgets/mchat/controlpanelwidget','emoticons','jscrollpane','text!definition.json'],
-	function ($, _, Backbone, ControlPanelWidget,emoticons,jscrollpane,defs) {
+define(['jquery', 'underscore', 'backbone', 'widgets/mchat/controlpanelwidget','emoticons','jscrollpane','text!definition.json','widgets/mchat/dlg'],
+	function ($, _, Backbone, ControlPanelWidget,emoticons,jscrollpane,defs,Dlg) {
 	var _template = '<div class="chatarea-content mchat">\
+			<div id="dialogs"></div>\
 			<div id="controlpanelwidget"></div>\
 			<div class="sprite sprite-chats_29 bg-image"></div>\
 			<div id="mchatarea-scrollbar" class="mchat-scrollbar">\
@@ -86,6 +87,25 @@ define(['jquery', 'underscore', 'backbone', 'widgets/mchat/controlpanelwidget','
 			},
 			this.focus = function () {
 				this.ChatArea.$input.focus();
+			},
+			this.showPrivateDlg = function(){
+				var dlg = new Dlg({
+					caption: "Private chat",
+					text: "Start private chat " +App.data.private_cost + "credits",
+					onstart: function(){
+						App.sio.emit('start_private');
+					}
+				});
+			},
+			this.showPremiumDlg = function(){
+				var dlg = new Dlg({
+					caption: "Premium private chat",
+					text: "Start premium private chat " +App.data.private_cost + "credits",
+					onstart: function(){
+						App.sio.emit('start_premium_private');
+					}
+				});
+				this.$el('#dialogs').html(dlg.$el);
 			}
 	};
 	return ChatAreaController;
