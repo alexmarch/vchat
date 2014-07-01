@@ -565,7 +565,7 @@
 .dlg-wrapper .dlg-top {
   height: 25px;
 }
-.dlg-wrapper .closeDlg {
+.dlg-wrapper .close-dlg {
   float: right;
   display: block;
   padding: 4px;
