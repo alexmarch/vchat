@@ -3,8 +3,10 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		'<div class="dlg-top"><span class="close-dlg">&times;</span></div>' +
 		'<div class="dlg-content">' +
 			'<div class="dlg-caption"><%= caption%></div>' +
-		'<div class="dlg-text"><%= text%></div>' +
-		'<div class="dlg-footer"><a href="#" id="startPrivate" class="button-start">START</a></div>' +
+			'<div class="dlg-text"><%= text%></div>' +
+			'<div class="dlg-footer">' +
+				'<a href="#" id="startPrivate">START</a>' +
+			'</div>' +
 		'</div>' +
 		'</div>';
 	var Dlg = Backbone.View.extend({
@@ -12,7 +14,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		template: _.template(_template),
 
 		events:{
-			'click .close-dlg': 'closeDlg',
+			'click .close-dlg': 'closeDlg'
 		},
 
 		initialize: function(options){
