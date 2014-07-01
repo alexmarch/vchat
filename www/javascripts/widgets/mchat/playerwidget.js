@@ -12,6 +12,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		<param name="salign" value="" />\
 		<param name="allowScriptAccess" value="sameDomain" />\
 		<param name="allowFullScreen" value="true" />\
+		<param name="allowFullScreenInteractive" value="true" />\
 		<!--[if !IE]>-->\
 		<object type="application/x-shockwave-flash" id="VPlay" data="chat-app/www/assets/src/VPlay.swf" width="650" height="352">\
 			<param name="movie" value="chat-app/www/assets/src/VPlay.swf" />\
@@ -26,6 +27,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			<param name="salign" value="" />\
 			<param name="allowScriptAccess" value="sameDomain" />\
 			<param name="allowFullScreen" value="true" />\
+			<param name="allowFullScreenInteractive" value="true" />\
 			<!--<![endif]-->\
 			<a href="http://www.adobe.com/go/getflash">\
 				<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />\
