@@ -102,8 +102,12 @@ module.exports = function (app) {
 			var userData = userMgr.get(socket);
 			if(userMgr.isPerformer(userData)){
 				var data = 'control/record/start?app=videochat&name='+userData.sname+'&rec=rec1';
-				api.get(data,function(res){
-					console.log("Record start responce", res ,userData.sname);
+				api.get(data,function(err,res){
+					if(!err){
+						console.log("Record start responce", res.statusCode ,userData.sname);
+					}else{
+						console.log(err);
+					}
 				});
 			}
 		});
@@ -111,8 +115,10 @@ module.exports = function (app) {
 			var userData = userMgr.get(socket);
 			if(userMgr.isPerformer(userData)){
 				var data = 'control/record/stop?app=videochat&name='+userData.sname+'&rec=rec1';
-				api.get(data,function(res){
-					console.log("Record stop responce", res, userData.sname);
+				api.get(data,function(err,res){
+					if(!err){
+						console.log("Record stop responce", res.statusCode, userData.sname);
+					}
 				});
 			}
 		});

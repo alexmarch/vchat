@@ -33,7 +33,9 @@ exports.api = {
 	},
 	get: function(data,cb){
 		http.get('http://'+options.host+':'+options.nginxPort+'/'+data,function(res){
-			cb(res);
+			cb(null,res);
+		}).on('error', function(err){
+			cb(err,null);
 		});
 	}
 }
