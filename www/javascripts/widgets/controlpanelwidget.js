@@ -185,7 +185,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 		recButtonClick: function(){
 			if(this.rec){
 				publisher.stopRec();
-				this.rec = false;`
+				this.rec = false;
 			}else{
 				var sec = 0;
 				var min = 0;
