@@ -197,9 +197,9 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 				self.$el.find('#recButton').text('00:00');
 				this.recording = true;
 				this.rec = setInterval(function(){
-					  sec = sec<60 ? (sec++<10 ? '0'+sec : sec) : sec;
+					  sec = sec<60 ? (++sec<10 ? '0'+sec : sec) : sec;
 					  if(sec == 60) {
-					  	min = min<30 ? (min++<10 ? '0'+min : min): min;
+					  	min = min<30 ? (++min<10 ? '0'+min : min): min;
 					  	if(min == 30){
 					  		publisher.stopRec();
 					  		min = 0;
@@ -210,7 +210,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 					  	}
 					  	sec = 0;
 					  };
-					  self.$el.find('#recButton').text(min+':'+sec);
+					  self.$el.find('#recButton').text((min<10 ?: '0'+min)+':'+sec);
 				}, 1000);
 				publisher.startRec();
 			}
