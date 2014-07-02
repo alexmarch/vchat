@@ -183,14 +183,17 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 		* Rec video stream handler
 		**/
 		recButtonClick: function(){
-			if(this.rec){
+			if(this.recording){
 				publisher.stopRec();
 				clearInterval(this.rec);
 				this.$el.find('#recButton').text('Record');
+				this.$el.find('#recButton').removeClass('status-button');
+				this.recording = false;
 			}else{
 				var sec = 0;
 				var min = 0;
 				var self = this;
+				this.$el.find('#recButton').addClass('status-button');
 				this.rec = setInterval(function(){
 					  sec = sec<60 ? (sec++<10 ? '0'+sec : sec) : sec;
 					  if(sec == 60) {
@@ -199,6 +202,8 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 					  		publisher.stopRec();
 					  		min = 0;
 					  		self.$el.find('#recButton').text('Record');
+					  		self.$el.find('#recButton').removeClass('status-button');
+					  		this.recording = false;
 					  		clearInterval(self.rec);
 					  	}
 					  	sec = 0;
