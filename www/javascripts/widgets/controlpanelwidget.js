@@ -198,13 +198,12 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 					  	if(min == 30){
 					  		publisher.stopRec();
 					  		min = 0;
-					  		self.$el.find('#rectButton').text('Record');
+					  		self.$el.find('#recButton').text('Record');
 					  		clearInterval(self.rec);
 					  	}
 					  	sec = 0;
 					  };
-					  console.log("self", self)
-					  self.$el.find('#rectButton').text(min+':'+sec);
+					  self.$el.find('#recButton').text(min+':'+sec);
 				}, 1000);
 				publisher.startRec();
 			}
