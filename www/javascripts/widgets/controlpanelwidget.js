@@ -194,6 +194,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 				var min = 0;
 				var self = this;
 				this.$el.find('#recButton').addClass('status-button');
+				self.$el.find('#recButton').text('00:00');
 				this.recording = true;
 				this.rec = setInterval(function(){
 					  sec = sec<60 ? (sec++<10 ? '0'+sec : sec) : sec;
