@@ -210,7 +210,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 					  	}
 					  	sec = 0;
 					  };
-					  self.$el.find('#recButton').text((min<10 ?: '0'+min)+':'+sec);
+					  self.$el.find('#recButton').text((min<10 ? '0'+min : min)+':'+sec);
 				}, 1000);
 				publisher.startRec();
 			}
