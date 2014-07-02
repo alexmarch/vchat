@@ -28,8 +28,12 @@ exports.api = {
 		req.on("error",function(e){
 			cb(e,null);
 		});
-
 		req.write(data);
 		req.end();
+	},
+	get: function(data,cb){
+		http.get('http://'+options.host+':'+options.nginxPort+'/'+data,function(res){
+			cb(res);
+		});
 	}
 }

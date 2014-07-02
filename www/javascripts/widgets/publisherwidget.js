@@ -101,10 +101,12 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			}
 		},
 		startRec: function(){
-			this.obj.startRec();
+			//this.obj.startRec();
+			App.sio.emit('startRec');
 		},
 		stopRec: function(){
-			this.obj.stopRec();
+			//this.obj.stopRec();
+			App.sio.emit('stopRec');
 		},
 		inMemberArea: function(){
 			return this._inMemberArea;

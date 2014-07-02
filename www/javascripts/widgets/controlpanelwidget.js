@@ -186,7 +186,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 			if(this.rec){
 				publisher.stopRec();
 				clearInterval(this.rec);
-				console.log("clear interval");
+				this.$el.find('#recButton').text('Record');
 			}else{
 				var sec = 0;
 				var min = 0;

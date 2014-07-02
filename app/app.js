@@ -96,6 +96,27 @@ module.exports = function (app) {
 			}
 		});
 		/** ////////////////////////////////
+		*	Start/Stop recording
+		* ///////////////////////////////*/
+		socket.on('startRec',function(){
+			var userData = userMgr.get(socket);
+			if(userMgr.isPerformer(userData)){
+				var data = 'control/record/start?app=videochat&name='+userData.sname+'&rec=rec1';
+				api.get(data,function(res){
+					console.log("Record start responce", res ,userData.sname);
+				});
+			}
+		});
+		socket.on('stopRec',function(){
+			var userData = userMgr.get(socket);
+			if(userMgr.isPerformer(userData)){
+				var data = 'control/record/stop?app=videochat&name='+userData.sname+'&rec=rec1';
+				api.get(data,function(res){
+					console.log("Record stop responce", res, userData.sname);
+				});
+			}
+		});
+		/** ////////////////////////////////
 		 * 	Private chat callbacks
 		 * 	///////////////////////////////
 		 */
