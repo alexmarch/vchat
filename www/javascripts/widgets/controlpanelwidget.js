@@ -225,7 +225,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 				this.snap = setInterval(function(){
 					sec++;
 					self.$el.find('#snapshotButton').text(sec);
-					if(sec == 3){
+					if(sec >= 3){
 						publisher.makeSnapshot();
 						this.snapshoting = false;
 						self.$el.find('#snapshotButton').removeClass('status-button');
