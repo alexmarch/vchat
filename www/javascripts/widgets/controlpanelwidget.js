@@ -185,13 +185,25 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 		recButtonClick: function(){
 			if(this.rec){
 				publisher.stopRec();
-				this.rec = false;
+				clearInterval(this.rec);
+				console.log("clear interval");
 			}else{
 				var sec = 0;
 				var min = 0;
+				var self = this;
 				this.rec = setInterval(function(){
-					  sec = sec<=60 ? (sec++<10 ? '0'+sec : sec) : 0;
-					  console.log("Sec:", sec);
+					  sec = sec<60 ? (sec++<10 ? '0'+sec : sec) : sec;
+					  if(sec == 60) {
+					  	min = min<30 ? (min++<10 ? '0'+min : min): min;
+					  	if(min == 30){
+					  		publisher.stopRec();
+					  		min = 0;
+					  		self.$el('#rectButton').text('Record');
+					  		clearInterval(self.rec);
+					  	}
+					  	sec = 0;
+					  }
+					  self.$el('#rectButton').text(min+':'+sec);
 				}, 1000);
 				publisher.startRec();
 			}
