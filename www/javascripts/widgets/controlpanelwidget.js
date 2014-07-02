@@ -194,6 +194,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 				var min = 0;
 				var self = this;
 				this.$el.find('#recButton').addClass('status-button');
+				this.recording = true;
 				this.rec = setInterval(function(){
 					  sec = sec<60 ? (sec++<10 ? '0'+sec : sec) : sec;
 					  if(sec == 60) {
@@ -203,7 +204,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 					  		min = 0;
 					  		self.$el.find('#recButton').text('Record');
 					  		self.$el.find('#recButton').removeClass('status-button');
-					  		this.recording = false;
+					  		self.recording = false;
 					  		clearInterval(self.rec);
 					  	}
 					  	sec = 0;
