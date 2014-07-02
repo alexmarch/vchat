@@ -108,6 +108,9 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 			//this.obj.stopRec();
 			App.sio.emit('stopRec');
 		},
+		makeSnapshot: function(){
+			this.obj.makeSnapshot();
+		},
 		inMemberArea: function(){
 			return this._inMemberArea;
 		}

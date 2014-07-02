@@ -53,7 +53,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 					<a href="#" class="c-button" id="dictionaryButton">Dictionary</a>\
 					<a href="#" class="c-button" id="recButton">Record</a>\
 					<a href="#" class="c-button" id="settingsButton">Settings</a>\
-					<a href="#" class="c-button">Snapshot</a>\
+					<a href="#" class="c-button" id="snapshotButton">Snapshot</a>\
 					<a href="statistic.php" class="c-button" target="_blank">Statistic</a>\
 				</div></li>\
 			</ul>';
@@ -76,7 +76,8 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 			'click #fontButton': 'fontButtonClick',
 			'click #fontUp': "fontUpClick",
 			'click #fontDown': "fontDownClick",
-			'click #recButton': 'recButtonClick'
+			'click #recButton': 'recButtonClick',
+			'click #snapshotButton': 'snapshotButtonClick'
 		},
 		initialize: function () {
 			this.$el.addClass(this.className);
@@ -213,6 +214,23 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 					  self.$el.find('#recButton').text((min<10 ? '0'+min : min)+':'+sec);
 				}, 1000);
 				publisher.startRec();
+			}
+		},
+		snapshotButtonClick: function(){
+			if(!this.snapshoting){
+				var self = this;
+				var sec = 0;
+				this.$el.find('#snapshotButton').addClass('status-button');
+				this.snap = setInterval(function(){
+					sec++;
+					self.$el.find('#recButton').text(sec);
+					if(sec == 3){
+						publisher.makeSnapshot();
+						this.snapshoting = false;
+						self.$el.find('#snapshotButton').removeClass('status-button');
+						clearInterval(self.snap);
+					}
+				}, 1000);
 			}
 		}
 	});
