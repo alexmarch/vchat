@@ -51,7 +51,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 				</li>\
 				<li><div class="button-controls">\
 					<a href="#" class="c-button" id="dictionaryButton">Dictionary</a>\
-					<a href="#" class="c-button">Record</a>\
+					<a href="#" class="c-button" id="recButton">Record</a>\
 					<a href="#" class="c-button" id="settingsButton">Settings</a>\
 					<a href="#" class="c-button">Snapshot</a>\
 					<a href="statistic.php" class="c-button" target="_blank">Statistic</a>\
@@ -75,7 +75,8 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 			'click #settingsButton': 'showSettingsClick',
 			'click #fontButton': 'fontButtonClick',
 			'click #fontUp': "fontUpClick",
-			'click #fontDown': "fontDownClick"
+			'click #fontDown': "fontDownClick",
+			'click #recButton': 'recButtonClick'
 		},
 		initialize: function () {
 			this.$el.addClass(this.className);
@@ -177,6 +178,23 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 		},
 		showSettingsClick: function(){
 			App.widgets.ChatSettings.showSettings();
+		},
+		/**
+		* Rec video stream handler
+		**/
+		recButtonClick: function(){
+			if(this.rec){
+				publisher.stopRec();
+				this.rec = false;`
+			}else{
+				var sec = 0;
+				var min = 0;
+				this.rec = setInterval(function(){
+					  sec = sec<=60 ? (sec++<10 ? '0'+sec : sec) : 0;
+					  console.log("Sec:", sec);
+				}, 1000);
+				publisher.startRec();
+			}
 		}
 	});
 	var ControlPanelWidget = function (options) {

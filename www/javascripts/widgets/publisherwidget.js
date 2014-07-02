@@ -68,6 +68,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 		this.debug = function (s) {
 			console.log("%c***Publisher***%c	%o", "color: #00b3ee;background: #343638;padding:4px", "background:#fff", s)
 		};
+
 	};
 
 
@@ -98,6 +99,12 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 				this._inMemberArea = false;
 				this.obj.closemember();
 			}
+		},
+		startRec: function(){
+			this.obj.startRec();
+		},
+		stopRec: function(){
+			this.obj.stopRec();
 		},
 		inMemberArea: function(){
 			return this._inMemberArea;
