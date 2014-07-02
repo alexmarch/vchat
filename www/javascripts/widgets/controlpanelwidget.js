@@ -221,7 +221,7 @@ define(['jquery', 'underscore', 'backbone', 'text!definition.json', 'tinycolor',
 				var self = this;
 				var sec = 1;
 				this.$el.find('#snapshotButton').addClass('status-button');
-				this.$el.find('#snapshotButton').text("0");
+				this.$el.find('#snapshotButton').text(sec);
 				this.snap = setInterval(function(){
 					self.$el.find('#snapshotButton').text(sec);
 					if(sec == 3){
